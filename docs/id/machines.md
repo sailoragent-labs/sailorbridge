@@ -1,3 +1,5 @@
+[English](../machines.md) · [简体中文](../zh-CN/machines.md) · [日本語](../ja/machines.md) · [한국어](../ko/machines.md) · [Deutsch](../de/machines.md) · [Français](../fr/machines.md) · [Español](../es/machines.md) · [Português (BR)](../pt-BR/machines.md) · [Bahasa Indonesia](machines.md) · [हिन्दी](../hi/machines.md)
+
 [← SailorBridge](README.md)
 
 # Mesin
@@ -8,7 +10,7 @@ Mesin adalah komputer yang Anda hubungkan ke akun untuk menjalankan pemimpin tim
 
 1. Gunakan mesin yang Anda kendalikan dengan Linux x64 atau macOS arm64 atau x64. Pasang Git. Untuk chat dan tugas, pasang Claude Code atau Codex dan masuk di mesin itu dengan akun mesin AI Anda sendiri. Penyandingan bisa selesai sebelum Anda masuk ke mesin AI.
 2. Di aplikasi, buka **Mesin**, lalu **Pasangkan mesin baru**. Salin perintah pemasangan yang ditampilkan ke terminal mesin yang ingin Anda hubungkan. Perintah dapat dijalankan dari direktori mana saja. Perintah memasang `sail`, memulai penyandingan, dan menampilkan kode delapan karakter yang berlaku 10 menit.
-3. Masukkan kode itu di **Kode penyandingan** pada browser dan pilih **Pasangkan**. Cocokkan nama mesin dan **Kode kunci** dengan yang ada di terminal. Pada penyandingan pertama, baca pemberitahuan sebelum menerimanya. Agent dapat membaca, mengubah, dan menghapus berkas, memakai kredensial, dan mengakses jaringan dengan izin pengguna sistem operasi yang menjalankan `sail`. Gunakan mesin atau kontainer khusus jika memerlukan isolasi.
+3. Masukkan kode itu di **Kode penyandingan** pada browser dan pilih **Pasangkan**. Periksa nama mesin, platform, dan versi `sail` yang ditampilkan. Pada penyandingan pertama, baca pemberitahuan sebelum menerimanya. Agent dapat membaca, mengubah, dan menghapus berkas, memakai kredensial, dan mengakses jaringan dengan izin pengguna sistem operasi yang menjalankan `sail`. Gunakan mesin atau kontainer khusus jika memerlukan isolasi.
 4. Pilih **Setujui mesin**. Jaga mesin tetap terhubung saat mengambil kredensial dan memulai layanan. Saat **Mesin** menunjukkan **Daring** dan terminal mengonfirmasi koneksi, Anda dapat memilih **Siapkan Akun** atau **Buat Tim**. [Buat tim](teams.md)
 
 ## Periksa koneksi atau pasangkan mesin lain
@@ -32,7 +34,7 @@ Untuk menghapus pemasangan dari komputer, simpan dahulu pekerjaan yang Anda butu
 ## Jika ada masalah
 
 - Jika penyandingan melaporkan bahwa Git tidak ada, pasang Git dan jalankan `sail login` untuk melanjutkan. Jika belum masuk ke mesin AI, tangani secara terpisah dengan `claude login` atau `codex login` sebelum memulai obrolan atau tugas.
-- Jika kode kedaluwarsa, jalankan `sail login` untuk mendapat kode baru. Jika nama mesin atau **Kode kunci** berbeda, pilih **Batalkan pemasangan** dan periksa terminal di mesin yang dimaksud. Jika persetujuan berhasil tetapi mesin belum tersambung dalam 10 menit, jalankan `sail host status`, lalu `sail login` untuk menyambungkannya kembali.
+- Jika kode kedaluwarsa, jalankan `sail login` untuk mendapat kode baru. Jika halaman menampilkan mesin lain, periksa kode penyandingan di terminal mesin yang ingin Anda pasangkan, lalu masukkan kembali. Setelah menyetujui, Anda dapat memilih **Batalkan pemasangan** sebelum mesin mengambil kredensialnya. Jika persetujuan berhasil tetapi mesin belum tersambung dalam 10 menit, jalankan `sail host status`, lalu `sail login` untuk menyambungkannya kembali.
 - Jika mesin tiba-tiba luring, periksa jaringan dan layanannya dengan `sail host status`. Batas waktu bawaan sebelum mesin dianggap luring adalah 90 detik. Pemberitahuan luring baru muncul setelah mesin luring selama 10 menit dan hilang saat mesin kembali.
 - Jika pembaruan gagal, buka mesin untuk membaca alasannya dan jalankan perintah perbaikan yang ditampilkan sebagai pengguna yang memasang `sail`. Jika cadangan lokal tidak dapat digunakan, jalankan perintah pemasangan dari halaman penyandingan.
 - Jika mesin melaporkan perubahan identitas server, mesin menolak koneksi. Gunakan `sail host status --trust` untuk melihat sidik jari yang tersimpan di mesin. Jika perubahan memang diharapkan, jalankan `sail login`, periksa sidik jari baru di terminal, dan setujui penyandingan baru.

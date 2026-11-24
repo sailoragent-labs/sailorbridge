@@ -25,7 +25,7 @@ Dans **Machines**, ouvrez **Associer une nouvelle machine**. Copiez l’unique c
 
 ## 4. Approuver la machine
 
-Saisissez le code d’appariement sur la page d’association du navigateur et choisissez **Associer**. Comparez le nom de la machine et le **Code de clé** avec ceux du terminal. Lors de la première association, lisez et acceptez l’avis sur les droits de l’utilisateur qui exécute `sail`, puis choisissez **Approuver la machine**.
+Saisissez le code d’appariement sur la page d’association du navigateur et choisissez **Associer**. Vérifiez le nom et les détails de la machine affichée. Lors de la première association, lisez et acceptez l’avis sur les droits de l’utilisateur qui exécute `sail`, puis choisissez **Approuver la machine**.
 
 **Vérification** — Attendez que l’état **En ligne** apparaisse sous **Machines**. Le terminal confirme lui aussi que la machine est associée et en ligne.
 

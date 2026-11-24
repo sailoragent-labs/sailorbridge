@@ -1,3 +1,5 @@
+[English](../troubleshooting.md) · [简体中文](../zh-CN/troubleshooting.md) · [日本語](../ja/troubleshooting.md) · [한국어](../ko/troubleshooting.md) · [Deutsch](../de/troubleshooting.md) · [Français](../fr/troubleshooting.md) · [Español](troubleshooting.md) · [Português (BR)](../pt-BR/troubleshooting.md) · [Bahasa Indonesia](../id/troubleshooting.md) · [हिन्दी](../hi/troubleshooting.md)
+
 [← SailorBridge](README.md)
 
 # Solución de problemas
@@ -17,7 +19,7 @@ Empieza donde se detuvo el trabajo. Si se trata de un inicio de sesión o un pag
 ## Hacer funcionar una máquina o un equipo
 
 - Si la instalación se detiene porque falta Git, instálalo y vuelve a ejecutar el comando de **Vincular una nueva máquina**. Si Claude Code o Codex no tiene una sesión abierta, puedes completar la vinculación. Ejecuta `claude login` o `codex login` en la máquina antes de pedirle trabajo al equipo.
-- Si caduca el código de emparejamiento, ejecuta `sail login` para obtener otro. Introdúcelo en **Vincular una nueva máquina**, elige **Vincular** y compara el nombre de la máquina y el **Código de clave** con el terminal antes de elegir **Aprobar máquina**. Si los códigos no coinciden, cancela la vinculación y empieza de nuevo. Tras la aprobación, espera a que se conecte la máquina.
+- Si caduca el código de emparejamiento, ejecuta `sail login` para obtener otro. Introdúcelo en **Vincular una nueva máquina**, elige **Vincular** y comprueba el nombre y los detalles de la máquina que aparece. En la primera vinculación, lee y acepta el aviso, elige **Aprobar máquina** y espera a que se conecte.
 - Si la máquina no se conecta en 10 minutos, ejecuta `sail host status`. Muestra el estado del servicio y la ruta del registro. En la misma dirección, ejecuta `sail login` para restablecer el servicio. Si aparece `origin_mismatch` y quieres cambiar de dirección, `sail uninstall` elimina los datos locales de SailorBridge, incluidas las copias de trabajo de las tareas. Ejecuta después el comando de instalación de la página **Máquinas** de la aplicación deseada y vincula la máquina de nuevo.
 - Si falla una actualización, abre la máquina en **Máquinas**, consulta el motivo y sigue el comando de reparación indicado. Si falló la descarga, vuelve a intentarlo más tarde con `sail upgrade`. Si falló la escritura, comprueba el espacio en disco y usa la cuenta que instaló `sail`.
 - Si la creación del equipo pide una máquina, vincula una y espera a que aparezca **En línea**. Si no puedes quitar la última máquina del equipo, usa primero **Añadir una máquina**. Si no se puede crear el directorio del equipo, elige **Cambiar el directorio en los ajustes del equipo**. Usa una ruta de directorio absoluta en la máquina donde se produjo el error. Un archivo en ese lugar, la falta de permiso de escritura o un disco de solo lectura pueden impedir la creación. [Máquinas](machines.md) · [Equipos](teams.md)

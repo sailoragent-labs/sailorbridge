@@ -1,3 +1,5 @@
+[English](../troubleshooting.md) · [简体中文](../zh-CN/troubleshooting.md) · [日本語](../ja/troubleshooting.md) · [한국어](../ko/troubleshooting.md) · [Deutsch](troubleshooting.md) · [Français](../fr/troubleshooting.md) · [Español](../es/troubleshooting.md) · [Português (BR)](../pt-BR/troubleshooting.md) · [Bahasa Indonesia](../id/troubleshooting.md) · [हिन्दी](../hi/troubleshooting.md)
+
 [← SailorBridge](README.md)
 
 # Fehlerbehebung
@@ -17,7 +19,7 @@ Beginne dort, wo die Arbeit aufgehört hat. Bei einer Anmeldung oder Zahlung lie
 ## Einen Rechner oder ein Team zum Laufen bringen
 
 - Bricht die Installation ab, weil Git fehlt, installiere Git und starte den Befehl von **Neuen Rechner koppeln** erneut. Ist Claude Code oder Codex abgemeldet, kannst du die Kopplung abschließen. Führe `claude login` oder `codex login` auf dem Rechner aus, bevor du das Team um Arbeit bittest.
-- Läuft der Kopplungscode ab, hole mit `sail login` einen neuen. Gib ihn unter **Neuen Rechner koppeln** ein, wähle **Koppeln** und vergleiche Rechnernamen und **Schlüssel-Code** mit der Terminalanzeige, bevor du **Rechner genehmigen** wählst. Stimmen die Codes nicht überein, brich die Kopplung ab und beginne neu. Warte nach der Genehmigung, bis der Rechner verbunden ist.
+- Läuft der Pairing-Code ab, hole mit `sail login` einen neuen. Gib ihn unter **Neuen Rechner koppeln** ein, wähle **Koppeln** und prüfe den angezeigten Rechnernamen und die Details. Lies und bestätige beim ersten Koppeln den Hinweis, wähle dann **Rechner genehmigen** und warte, bis der Rechner verbunden ist.
 - Hat sich der Rechner nach 10 Minuten noch nicht verbunden, führe `sail host status` aus. Der Befehl zeigt Dienststatus und Logpfad. Führe an derselben Adresse `sail login` aus, um den Dienst wiederherzustellen. Wenn `origin_mismatch` erscheint und du die Adresse wechseln willst, entfernt `sail uninstall` die lokalen SailorBridge-Daten einschließlich Arbeitskopien der Aufträge. Führe dann den Installationsbefehl von **Rechner** in der gewünschten App aus und kopple neu.
 - Scheitert ein Update, öffne den Rechner unter **Rechner** und folge dem angezeigten Grund und Reparaturbefehl. Bei einem Downloadfehler versuche es später mit `sail upgrade` erneut. Bei einem Schreibfehler prüfe den Speicherplatz und verwende das Konto, das `sail` installiert hat.
 - Verlangt die Teamerstellung einen Rechner, kopple einen und warte auf **Online**. Kannst du den letzten Rechner eines Teams nicht entfernen, nutze zuerst **Maschine hinzufügen**. Lässt sich das Teamverzeichnis nicht anlegen, wähle **Verzeichnis in den Teameinstellungen ändern**. Nutze einen absoluten Verzeichnispfad auf dem Rechner, auf dem der Fehler auftrat. Eine Datei an dieser Stelle, fehlende Schreibrechte oder ein schreibgeschützter Datenträger können das Anlegen verhindern. [Rechner](machines.md) · [Teams](teams.md)

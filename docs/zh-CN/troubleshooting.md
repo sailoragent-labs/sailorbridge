@@ -1,3 +1,5 @@
+[English](../troubleshooting.md) · [简体中文](troubleshooting.md) · [日本語](../ja/troubleshooting.md) · [한국어](../ko/troubleshooting.md) · [Deutsch](../de/troubleshooting.md) · [Français](../fr/troubleshooting.md) · [Español](../es/troubleshooting.md) · [Português (BR)](../pt-BR/troubleshooting.md) · [Bahasa Indonesia](../id/troubleshooting.md) · [हिन्दी](../hi/troubleshooting.md)
+
 [← SailorBridge](README.md)
 
 # 故障排查
@@ -17,7 +19,7 @@
 ## 让机器或团队恢复工作
 
 - 如果安装因缺少 Git 而停止，请安装 Git，再运行 **配对新机器** 中的安装命令。Claude Code 或 Codex 未登录时，仍可完成配对。请先在机器上运行 `claude login` 或 `codex login`，再要求团队工作。
-- 配对码过期时，运行 `sail login` 获取新码。在 **配对新机器** 上输入并选择 **配对**。对照终端核对机器名和 **钥匙短码**，再选择 **批准机器**。如果短码不同，取消配对并重新开始。批准后需要等待机器连接。
+- 配对码过期时，运行 `sail login` 获取新码。在 **配对新机器** 上输入配对码，选择 **配对**，核对页面上的机器名和详细信息。首次配对时阅读并接受提示，然后选择 **批准机器**，等待机器连接。
 - 如果机器在 10 分钟内未连接，运行 `sail host status`，查看服务状态和日志路径。要恢复同一地址的服务，运行 `sail login`。遇到 `origin_mismatch` 且确实要切换地址时，`sail uninstall` 会删除本机 SailorBridge 数据，包括任务的工作副本。然后运行目标应用的 **机器** 页中的安装命令，重新配对。
 - 更新失败时，在 **机器** 打开对应机器，按显示的原因和修复命令处理。如果下载失败，稍后用 `sail upgrade` 重试。如果写入失败，请检查磁盘空间，并使用当初安装 `sail` 的账号。
 - 如果建团要求有机器，请配对一台并等待 **在线**。如果无法移除团队最后一台机器，请先用 **加一台机器**。如果无法创建团队目录，选择 **去团队设置改目录**。请使用报错机器上的绝对目录路径。路径上已有文件、缺少写权限或磁盘只读都可能导致无法创建。[机器](machines.md) · [团队](teams.md)

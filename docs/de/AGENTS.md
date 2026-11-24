@@ -25,7 +25,7 @@ Verwende einen eigenen Rechner mit Linux x64 oder macOS auf arm64 oder x64. Inst
 
 ## 4. Rechner genehmigen
 
-Gib den Pairing-Code auf der Kopplungsseite im Browser ein und wähle **Koppeln**. Vergleiche Rechnernamen und **Schlüssel-Code** mit der Anzeige im Terminal. Lies und bestätige beim ersten Koppeln den Hinweis zu den Rechten des Benutzers, der `sail` ausführt. Wähle dann **Rechner genehmigen**.
+Gib den Pairing-Code auf der Kopplungsseite im Browser ein und wähle **Koppeln**. Prüfe den angezeigten Rechnernamen und die Details. Lies und bestätige beim ersten Koppeln den Hinweis zu den Rechten des Benutzers, der `sail` ausführt. Wähle dann **Rechner genehmigen**.
 
 **Prüfung** — Warte, bis unter **Rechner** der Status **Online** erscheint. Auch das Terminal bestätigt, dass der Rechner gekoppelt und online ist.
 

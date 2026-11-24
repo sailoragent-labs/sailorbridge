@@ -25,7 +25,7 @@ En **Máquinas**, abre **Vincular una nueva máquina**. Copia el único comando 
 
 ## 4. Aprobar la máquina
 
-Introduce el código de emparejamiento en la página de vinculación del navegador y selecciona **Vincular**. Compara el nombre de la máquina y el **Código de clave** con lo que aparece en el terminal. En la primera vinculación, lee y acepta el aviso sobre los permisos del usuario que ejecuta `sail` y elige **Aprobar máquina**.
+Introduce el código de emparejamiento en la página de vinculación del navegador y selecciona **Vincular**. Comprueba el nombre y los detalles de la máquina que aparece. En la primera vinculación, lee y acepta el aviso sobre los permisos del usuario que ejecuta `sail` y elige **Aprobar máquina**.
 
 **Comprobación** — Espera a que la máquina aparezca **En línea** en **Máquinas**. El terminal también confirma que está vinculada y en línea.
 

@@ -1,3 +1,5 @@
+[English](../troubleshooting.md) · [简体中文](../zh-CN/troubleshooting.md) · [日本語](../ja/troubleshooting.md) · [한국어](../ko/troubleshooting.md) · [Deutsch](../de/troubleshooting.md) · [Français](../fr/troubleshooting.md) · [Español](../es/troubleshooting.md) · [Português (BR)](../pt-BR/troubleshooting.md) · [Bahasa Indonesia](troubleshooting.md) · [हिन्दी](../hi/troubleshooting.md)
+
 [← SailorBridge](README.md)
 
 # Pemecahan masalah
@@ -17,7 +19,7 @@ Mulai dari tempat pekerjaan terhenti. Untuk masalah login atau pembayaran, baca 
 ## Buat mesin atau tim kembali berfungsi
 
 - Jika pemasangan berhenti karena Git belum ada, pasang Git lalu jalankan ulang perintah dari **Pasangkan mesin baru**. Jika belum masuk ke Claude Code atau Codex, penyandingan tetap bisa selesai. Jalankan `claude login` atau `codex login` di mesin sebelum meminta tim bekerja.
-- Jika kode penyandingan kedaluwarsa, jalankan `sail login` untuk membuat kode baru. Masukkan di **Pasangkan mesin baru**, pilih **Pasangkan**, dan cocokkan nama mesin serta **Kode kunci** dengan terminal sebelum memilih **Setujui mesin**. Jika kode berbeda, batalkan penyandingan dan mulai lagi. Setelah menyetujui, tunggu hingga mesin tersambung.
+- Jika kode penyandingan kedaluwarsa, jalankan `sail login` untuk membuat kode baru. Masukkan kode di **Pasangkan mesin baru**, pilih **Pasangkan**, lalu periksa nama dan detail mesin yang ditampilkan. Saat pertama kali menyandingkan mesin, baca dan setujui pemberitahuan, lalu pilih **Setujui mesin** dan tunggu hingga mesin tersambung.
 - Jika mesin belum terhubung dalam 10 menit, jalankan `sail host status`. Perintah ini menampilkan status layanan dan jalur log. Di alamat yang sama, jalankan `sail login` untuk memulihkan layanan. Untuk `origin_mismatch`, jika ingin berganti alamat, `sail uninstall` menghapus data lokal SailorBridge, termasuk salinan kerja tugas. Lalu jalankan perintah pemasangan dari halaman **Mesin** aplikasi yang dituju dan pasangkan lagi.
 - Jika pembaruan gagal, buka mesin di **Mesin** dan ikuti keterangan penyebab serta perintah perbaikan yang ditampilkan. Jika unduhan gagal, coba lagi nanti dengan `sail upgrade`. Jika penulisan gagal, periksa ruang disk dan gunakan akun yang memasang `sail`.
 - Jika pembuatan tim meminta mesin, pasangkan satu dan tunggu hingga **Daring**. Jika mesin terakhir tim tidak bisa dikeluarkan, gunakan **Tambah mesin** terlebih dahulu. Jika direktori tim tidak dapat dibuat, pilih **Ubah direktori di pengaturan tim**. Gunakan jalur direktori absolut di mesin tempat kesalahan terjadi. Berkas di jalur itu, izin tulis yang tidak tersedia, atau disk hanya-baca bisa mencegah pembuatan. [Mesin](machines.md) · [Tim](teams.md)

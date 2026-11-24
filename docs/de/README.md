@@ -6,9 +6,9 @@ SailorBridge ist eine Chat-App für alle, die auf ihren eigenen Rechnern mit Cod
 
 ## Erste Schritte
 
-1. [Registriere dich in der App](https://app.sailorbridge.com) mit einer numerischen Kapitän-ID und einem Passwort.
+1. [Registriere dich in der App](https://app.sailorbridge.com) mit einer numerischen Kapitän-ID und einem Passwort. Nach der Registrierung empfehlen wir dir, [die Web-App auf deinem Smartphone oder Computer zu installieren](install-the-app.md).
 2. Öffne **Rechner**. Kopiere den einen Installationsbefehl von der Kopplungsseite und führe ihn im Terminal auf dem Rechner aus, auf dem deine Agents arbeiten sollen.
-3. Gib den Pairing-Code im Browser ein, gleiche Rechnernamen und Schlüssel-Code ab und genehmige die Kopplung. Warte, bis der Rechner als **Online** erscheint.
+3. Gib den Pairing-Code aus dem Terminal ein und wähle **Koppeln**. Prüfe den angezeigten Rechnernamen und die Details. Lies und bestätige beim ersten Koppeln den Hinweis und wähle dann **Rechner genehmigen**. Warte, bis der Rechner als **Online** erscheint.
 4. Wähle **Team Erstellen**, benenne das Team, wähle diesen Rechner aus und gib den absoluten Pfad zum Projektverzeichnis auf diesem Rechner ein.
 5. Sende deine erste Nachricht im Teamchat. Für den ersten Auftrag sende `/agent Zähle die Dateien direkt im Projektverzeichnis und nenne mir die Anzahl.` In der **Auftragsliste** siehst du den Fortschritt.
 
@@ -20,6 +20,7 @@ Verwende Linux x64 oder macOS auf arm64 oder x64 mit installiertem Git. Melde di
 
 ## Anleitungen
 
+- [App installieren](install-the-app.md) — Öffne SailorBridge auf deinem Smartphone oder Computer über ein eigenes Symbol.
 - [Konto und Sicherheit](account-and-security.md) — Registriere dich, bestätige eine Anmeldung oder stelle dein Konto wieder her.
 - [Rechner](machines.md) — Kopple einen Rechner, prüfe seine Verbindung, aktualisiere ihn oder entferne ihn.
 - [Teams](teams.md) — Wähle ein Projektverzeichnis, füge Rechner hinzu und lege fest, wohin fertige Arbeit geht.

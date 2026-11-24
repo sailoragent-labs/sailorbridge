@@ -25,7 +25,7 @@ Buka **Mesin**, lalu **Pasangkan mesin baru**. Salin satu perintah pemasangan ya
 
 ## 4. Setujui mesin
 
-Masukkan kode penyandingan di halaman penyandingan pada browser, lalu pilih **Pasangkan**. Cocokkan nama mesin dan **Kode kunci** dengan yang tertera di terminal. Saat pertama kali menyandingkan mesin, baca dan setujui pemberitahuan tentang izin pengguna yang menjalankan `sail`, lalu pilih **Setujui mesin**.
+Masukkan kode penyandingan di halaman penyandingan pada browser, lalu pilih **Pasangkan**. Periksa nama dan detail mesin yang ditampilkan. Saat pertama kali menyandingkan mesin, baca dan setujui pemberitahuan tentang izin pengguna yang menjalankan `sail`, lalu pilih **Setujui mesin**.
 
 **Periksa** — Tunggu hingga status **Daring** muncul di **Mesin**. Terminal juga mengonfirmasi bahwa mesin sudah disandingkan dan daring.
 

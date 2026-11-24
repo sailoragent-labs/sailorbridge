@@ -6,9 +6,9 @@ SailorBridge es una app de chat para quienes trabajan con agents de programació
 
 ## Primeros pasos
 
-1. [Regístrate en la aplicación](https://app.sailorbridge.com) con un ID de capitán numérico y una contraseña.
+1. [Regístrate en la aplicación](https://app.sailorbridge.com) con un ID de capitán numérico y una contraseña. Después de registrarte, te recomendamos [instalar la aplicación web](install-the-app.md) en tu teléfono u ordenador.
 2. Abre **Máquinas**. Copia el único comando de instalación de la página de vinculación y ejecútalo en el terminal de la máquina en la que trabajarán tus agents.
-3. Introduce el código de emparejamiento en el navegador, comprueba el nombre de la máquina y el código de clave y aprueba la vinculación. Espera a que la máquina aparezca **En línea**.
+3. Introduce el código de emparejamiento del terminal y elige **Vincular**. Comprueba el nombre y los detalles de la máquina que aparece. En la primera vinculación, lee y acepta el aviso y elige **Aprobar máquina**. Espera a que la máquina aparezca **En línea**.
 4. Selecciona **Crear un Equipo**, ponle un nombre al equipo, selecciona esa máquina e introduce la ruta absoluta del directorio del proyecto en ella.
 5. Envía el primer mensaje en el chat del equipo. Para iniciar la primera tarea, envía `/agent Cuenta los archivos que hay en la raíz del proyecto y dime cuántos son.` Sigue su progreso en **Lista de tareas**.
 
@@ -20,6 +20,7 @@ Utiliza Linux x64 o macOS en arm64 o x64, con Git instalado. Para chatear y ejec
 
 ## Guías
 
+- [Instalar la aplicación](install-the-app.md) — Abre SailorBridge desde su propio icono en tu teléfono u ordenador.
 - [Cuenta y seguridad](account-and-security.md) — Regístrate, confirma un inicio de sesión o recupera tu cuenta.
 - [Máquinas](machines.md) — Vincula una máquina, comprueba su conexión, actualízala o quítala.
 - [Equipos](teams.md) — Elige un directorio de proyecto, añade máquinas y configura adónde va el trabajo terminado.

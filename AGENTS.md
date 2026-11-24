@@ -25,7 +25,7 @@ Open **Machines** and the **Pair a New Machine** page. Copy the single install c
 
 ## 4. Approve the machine
 
-Enter the pairing code on the browser’s pairing page and choose **Pair**. Match the machine name and **Key Code** with the terminal. Read and accept the first-pairing notice about the permissions of the user running `sail`, then choose **Approve Machine**.
+Enter the pairing code on the browser’s pairing page and choose **Pair**. Check the machine name and details shown. Read and accept the first-pairing notice about the permissions of the user running `sail`, then choose **Approve Machine**.
 
 **Check** — Wait for **Online** in **Machines**. The terminal also confirms that the machine is paired and online.
 

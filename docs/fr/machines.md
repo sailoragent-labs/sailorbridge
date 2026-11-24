@@ -1,3 +1,5 @@
+[English](../machines.md) · [简体中文](../zh-CN/machines.md) · [日本語](../ja/machines.md) · [한국어](../ko/machines.md) · [Deutsch](../de/machines.md) · [Français](machines.md) · [Español](../es/machines.md) · [Português (BR)](../pt-BR/machines.md) · [Bahasa Indonesia](../id/machines.md) · [हिन्दी](../hi/machines.md)
+
 [← SailorBridge](README.md)
 
 # Machines
@@ -8,7 +10,7 @@ Une machine est un ordinateur que vous connectez à votre compte pour y faire to
 
 1. Utilisez une machine que vous contrôlez sous Linux x64 ou macOS sur arm64 ou x64. Installez Git. Pour les discussions et les tâches, installez Claude Code ou Codex et connectez-vous sur cette machine avec votre propre compte du moteur. Vous pouvez terminer l’association avant de vous connecter au moteur.
 2. Dans l’application, ouvrez **Machines**, puis **Associer une nouvelle machine**. Copiez la commande d’installation affichée dans un terminal sur la machine à connecter. Vous pouvez l’exécuter depuis n’importe quel répertoire. Elle installe `sail`, démarre l’association et affiche un code à huit caractères valable 10 minutes.
-3. Dans le navigateur, saisissez ce code dans **Code d'appariement** et choisissez **Associer**. Comparez le nom de la machine et le **Code de clé** à ceux du terminal. Lors de la première association, lisez l’avis avant de l’accepter. Les agents peuvent lire, modifier ou supprimer des fichiers, utiliser des identifiants et se connecter au réseau avec les droits de l’utilisateur du système qui exécute `sail`. Utilisez une machine ou un conteneur dédié si vous avez besoin d’isolation.
+3. Dans le navigateur, saisissez ce code dans **Code d'appariement** et choisissez **Associer**. Vérifiez le nom, la plateforme et la version de `sail` affichés. Lors de la première association, lisez l’avis avant de l’accepter. Les agents peuvent lire, modifier ou supprimer des fichiers, utiliser des identifiants et se connecter au réseau avec les droits de l’utilisateur du système qui exécute `sail`. Utilisez une machine ou un conteneur dédié si vous avez besoin d’isolation.
 4. Choisissez **Approuver la machine**. Laissez la machine connectée pendant qu’elle récupère ses identifiants et démarre le service. Quand **Machines** affiche **En ligne** et que le terminal confirme la connexion, vous pouvez choisir **Configurer les Comptes** ou **Créer une Équipe**. [Créer une équipe](teams.md)
 
 ## Vérifier une connexion ou associer d’autres machines
@@ -32,7 +34,7 @@ Pour retirer l’installation de l’ordinateur, sauvegardez d’abord les trava
 ## En cas de problème
 
 - Si l’association signale que Git manque, installez Git et exécutez `sail login` pour poursuivre. Si vous devez vous connecter au moteur, exécutez séparément `claude login` ou `codex login` avant de commencer une discussion ou une tâche.
-- Si le code expire, exécutez `sail login` pour en obtenir un nouveau. Si le nom de la machine ou le **Code de clé** diffère, choisissez **Annuler l'association** et vérifiez le terminal de la machine voulue. Si l’approbation a abouti mais que la machine ne s’est pas connectée après 10 minutes, exécutez `sail host status`, puis `sail login` pour la reconnecter.
+- Si le code expire, exécutez `sail login` pour en obtenir un nouveau. Si la page affiche une autre machine, vérifiez le code d’appariement dans le terminal de la machine voulue, puis saisissez-le de nouveau. Après l’approbation, vous pouvez choisir **Annuler l'association** tant que la machine n’a pas récupéré ses identifiants. Si l’approbation a abouti mais que la machine ne s’est pas connectée après 10 minutes, exécutez `sail host status`, puis `sail login` pour la reconnecter.
 - Si une machine se déconnecte de façon inattendue, vérifiez le réseau et le service avec `sail host status`. Le délai par défaut pour passer hors ligne est de 90 secondes. La notification ne s’affiche qu’après 10 minutes hors ligne et disparaît au retour de la machine.
 - Si une mise à jour échoue, ouvrez la machine pour lire la raison et exécutez la commande de réparation affichée avec le compte utilisateur qui a installé `sail`. Si la sauvegarde locale est inutilisable, utilisez la commande d’installation de la page d’association.
 - Si la machine signale un changement d’identité du serveur, elle refuse la connexion. Exécutez `sail host status --trust` sur la machine pour examiner l’empreinte enregistrée. Si le changement était prévu, exécutez `sail login`, vérifiez la nouvelle empreinte dans le terminal et approuvez une nouvelle association.

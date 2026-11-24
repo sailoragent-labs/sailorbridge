@@ -6,9 +6,9 @@ SailorBridge adalah aplikasi chat untuk orang yang bekerja dengan agent pemrogra
 
 ## Memulai
 
-1. [Daftar di aplikasi](https://app.sailorbridge.com) dengan ID Kapten berupa angka dan kata sandi.
+1. [Daftar di aplikasi](https://app.sailorbridge.com) dengan ID Kapten berupa angka dan kata sandi. Setelah mendaftar, sebaiknya [instal aplikasi web](install-the-app.md) di ponsel atau komputer Anda.
 2. Buka **Mesin**. Salin satu perintah pemasangan yang ditampilkan di halaman penyandingan, lalu jalankan di terminal komputer tempat agent akan bekerja.
-3. Masukkan kode penyandingan di browser, cocokkan nama mesin dan kode kunci, lalu setujui penyandingan. Tunggu hingga mesin berstatus **Daring**.
+3. Masukkan kode penyandingan dari terminal dan pilih **Pasangkan**. Periksa nama dan detail mesin yang ditampilkan. Saat pertama kali menyandingkan mesin, baca dan setujui pemberitahuan, lalu pilih **Setujui mesin**. Tunggu hingga mesin berstatus **Daring**.
 4. Pilih **Buat Tim**, beri nama tim, pilih mesin tadi, lalu masukkan jalur absolut direktori proyek di mesin tersebut.
 5. Kirim pesan pertama di obrolan tim. Untuk menjalankan tugas pertama, kirim `/agent Hitung berkas yang berada langsung di direktori proyek dan laporkan jumlahnya.` Pantau tugas di **Daftar tugas**.
 
@@ -20,6 +20,7 @@ Gunakan Linux x64 atau macOS pada arm64 atau x64 dengan Git terpasang. Untuk men
 
 ## Panduan
 
+- [Instal aplikasi](install-the-app.md) — Buka SailorBridge dari ikonnya sendiri di ponsel atau komputer Anda.
 - [Akun dan keamanan](account-and-security.md) — Daftar, konfirmasikan proses masuk, atau pulihkan akun Anda.
 - [Mesin](machines.md) — Pasangkan mesin, periksa koneksinya, perbarui, atau keluarkan mesin.
 - [Tim](teams.md) — Pilih direktori proyek, tambahkan mesin, dan tetapkan tujuan hasil pekerjaan.

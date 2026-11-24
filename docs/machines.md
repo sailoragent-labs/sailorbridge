@@ -1,3 +1,5 @@
+[English](machines.md) · [简体中文](zh-CN/machines.md) · [日本語](ja/machines.md) · [한국어](ko/machines.md) · [Deutsch](de/machines.md) · [Français](fr/machines.md) · [Español](es/machines.md) · [Português (BR)](pt-BR/machines.md) · [Bahasa Indonesia](id/machines.md) · [हिन्दी](hi/machines.md)
+
 [← SailorBridge](../README.md)
 
 # Machines
@@ -8,7 +10,7 @@ A machine is a computer you connect to your account to run a team leader or take
 
 1. Use a machine you control running Linux x64 or macOS arm64 or x64. Install Git. For chat and jobs, install Claude Code or Codex and sign in on that machine with your own engine account. You can finish pairing before signing in to the engine.
 2. In the application, open **Machines**, then **Pair a New Machine**. Copy the install command shown there into a terminal on the machine you want to connect. You can run it from any directory. It installs `sail`, starts pairing and prints an eight-character code valid for 10 minutes.
-3. Enter that code under **Pairing Code** in the browser and choose **Pair**. Check the machine name and **Key Code** against the terminal. On your first pairing, read the notice before accepting it. Agents can read, change and delete files, use credentials and connect to the network with the permissions of the operating-system user running `sail`. Use a dedicated machine or container if you need isolation.
+3. Enter that code under **Pairing Code** in the browser and choose **Pair**. Check the machine name, platform and `sail` version shown. On your first pairing, read the notice before accepting it. Agents can read, change and delete files, use credentials and connect to the network with the permissions of the operating-system user running `sail`. Use a dedicated machine or container if you need isolation.
 4. Choose **Approve Machine**. Keep the machine connected while it collects its credentials and starts the service. When **Machines** shows **Online** and the terminal confirms the connection, you can choose **Set Up Accounts** or **Create a Team**. [Create a team](teams.md)
 
 ## Check a connection or pair more machines
@@ -32,7 +34,7 @@ To remove the installation from the computer, first save any work you need from 
 ## When it does not work
 
 - If pairing reports missing Git, install Git and run `sail login` to continue. A missing engine login can be fixed separately with `claude login` or `codex login` before you start chat or a job.
-- If the code expires, run `sail login` for a new one. If the machine name or **Key Code** differs, choose **Cancel Pairing** and check the terminal on the intended machine. If approval went through but the machine has not connected within 10 minutes, run `sail host status`, then `sail login` to reconnect.
+- If the code expires, run `sail login` for a new one. If the page shows a different machine, check the pairing code in the terminal on the intended machine and enter it again. After approval, you can choose **Cancel Pairing** until the machine collects its credentials. If approval went through but the machine has not connected within 10 minutes, run `sail host status`, then `sail login` to reconnect.
 - If a machine goes offline unexpectedly, check its network and service with `sail host status`. The default offline window is 90 seconds. The offline notification appears only after the machine has stayed offline for 10 minutes and clears when it returns.
 - If an update fails, open the machine to read the reason and run the repair command shown as the user who installed `sail`. If the local backup cannot be used, use the install command from the pairing page.
 - If the machine reports that the server identity has changed, it refuses the connection. Use `sail host status --trust` to inspect the saved fingerprint on the machine. For an expected identity change, run `sail login`, check the new fingerprint in the terminal and approve a new pairing.

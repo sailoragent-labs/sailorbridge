@@ -1,3 +1,5 @@
+[English](../troubleshooting.md) · [简体中文](../zh-CN/troubleshooting.md) · [日本語](../ja/troubleshooting.md) · [한국어](../ko/troubleshooting.md) · [Deutsch](../de/troubleshooting.md) · [Français](../fr/troubleshooting.md) · [Español](../es/troubleshooting.md) · [Português (BR)](troubleshooting.md) · [Bahasa Indonesia](../id/troubleshooting.md) · [हिन्दी](../hi/troubleshooting.md)
+
 [← SailorBridge](README.md)
 
 # Solução de problemas
@@ -17,7 +19,7 @@ Comece onde o trabalho parou. Para login ou pagamento, leia a mensagem na págin
 ## Faça uma máquina ou equipe voltar a funcionar
 
 - Se a instalação parar por falta do Git, instale o Git e execute novamente o comando de **Parear nova máquina**. Se o Claude Code ou o Codex estiver desconectado, ainda é possível concluir o pareamento. Execute `claude login` ou `codex login` na máquina antes de pedir à equipe que trabalhe.
-- Se o código de pareamento expirar, execute `sail login` para gerar outro. Digite-o em **Parear nova máquina**, selecione **Parear** e compare o nome da máquina e o **Código da chave** com o terminal antes de selecionar **Aprovar máquina**. Se os códigos forem diferentes, cancele o pareamento e comece de novo. Após a aprovação, aguarde a conexão da máquina.
+- Se o código de emparelhamento expirar, execute `sail login` para gerar outro. Digite-o em **Parear nova máquina**, selecione **Parear** e confira o nome e os detalhes da máquina que aparece. No primeiro pareamento, leia e aceite o aviso, selecione **Aprovar máquina** e aguarde a conexão.
 - Se a máquina não se conectar em 10 minutos, execute `sail host status`. Ele mostra o estado do serviço e o caminho do log. No mesmo endereço, execute `sail login` para restaurar o serviço. Para `origin_mismatch`, se você pretende trocar de endereço, `sail uninstall` remove os dados locais do SailorBridge, incluindo as cópias de trabalho das tarefas. Depois, execute o comando de instalação na página **Máquinas** do aplicativo que você quer usar e pareie novamente.
 - Se uma atualização falhar, abra a máquina em **Máquinas** e siga a orientação e o comando de reparo exibidos. Se o download falhar, tente mais tarde com `sail upgrade`. Se a gravação falhar, confira o espaço em disco e use a conta que instalou `sail`.
 - Se a criação da equipe pedir uma máquina, pareie uma e aguarde **On-line**. Se não conseguir remover a última máquina da equipe, use **Adicionar uma máquina** primeiro. Se o diretório da equipe não puder ser criado, selecione **Alterar o diretório nas configurações da equipe**. Use um caminho absoluto de diretório na máquina onde ocorreu o erro. Um arquivo nesse caminho, falta de permissão de escrita ou um disco somente de leitura podem impedir a criação. [Máquinas](machines.md) · [Equipes](teams.md)

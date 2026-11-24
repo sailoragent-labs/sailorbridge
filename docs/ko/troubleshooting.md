@@ -1,3 +1,5 @@
+[English](../troubleshooting.md) · [简体中文](../zh-CN/troubleshooting.md) · [日本語](../ja/troubleshooting.md) · [한국어](troubleshooting.md) · [Deutsch](../de/troubleshooting.md) · [Français](../fr/troubleshooting.md) · [Español](../es/troubleshooting.md) · [Português (BR)](../pt-BR/troubleshooting.md) · [Bahasa Indonesia](../id/troubleshooting.md) · [हिन्दी](../hi/troubleshooting.md)
+
 [← SailorBridge](README.md)
 
 # 문제 해결
@@ -17,7 +19,7 @@
 ## 머신 또는 팀이 작동하게 하기
 
 - Git이 없어 설치가 중단되면 Git을 설치하고 **새 머신 페어링**의 명령을 다시 실행합니다. Claude Code나 Codex가 로그아웃 상태여도 페어링은 완료할 수 있습니다. 팀에 작업을 요청하기 전에 머신에서 `claude login` 또는 `codex login`을 실행합니다.
-- 페어링 코드가 만료되면 `sail login`으로 새 코드를 받습니다. **새 머신 페어링**에 입력한 뒤 **페어링**을 선택하고, 머신 이름과 **키 코드**를 터미널에서 대조한 뒤 **머신 승인**을 선택합니다. 코드가 일치하지 않으면 페어링을 취소하고 다시 시작합니다. 승인 후 머신이 연결될 때까지 기다립니다.
+- 페어링 코드가 만료되면 `sail login`으로 새 코드를 받습니다. **새 머신 페어링**에서 코드를 입력하고 **페어링**을 선택한 뒤 화면에 표시된 머신 이름과 세부 정보를 확인합니다. 첫 페어링이라면 안내를 읽고 동의한 뒤 **머신 승인**을 선택하고 머신이 연결될 때까지 기다립니다.
 - 머신이 10분 안에 연결되지 않으면 `sail host status`를 실행합니다. 서비스 상태와 로그 경로가 표시됩니다. 같은 주소에서 서비스를 복구하려면 `sail login`을 실행합니다. `origin_mismatch`가 표시되고 주소를 바꾸려는 경우 `sail uninstall`을 실행하면 작업용 복사본을 포함한 로컬 SailorBridge 데이터가 제거됩니다. 이후 연결할 앱의 **머신** 페이지에 있는 설치 명령을 실행해 다시 페어링합니다.
 - 업데이트에 실패하면 **머신**에서 해당 머신을 열고 이유와 복구 명령을 따릅니다. 다운로드에 실패했다면 나중에 `sail upgrade`로 다시 시도합니다. 쓰기에 실패했다면 디스크 공간을 확인하고 `sail`을 설치한 계정을 사용합니다.
 - 팀을 만들 때 머신을 요구하면 한 대를 페어링하고 **온라인** 상태가 될 때까지 기다립니다. 팀의 마지막 머신을 제거할 수 없으면 먼저 **머신 추가**를 사용합니다. 팀 디렉터리를 만들 수 없다면 **팀 설정에서 디렉터리 변경**을 선택합니다. 오류가 발생한 머신의 절대 디렉터리 경로를 사용합니다. 해당 경로에 파일이 있거나 쓰기 권한이 없거나 디스크가 읽기 전용이면 디렉터리를 만들 수 없습니다. [머신](machines.md) · [팀](teams.md)

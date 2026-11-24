@@ -1,3 +1,5 @@
+[English](../machines.md) · [简体中文](../zh-CN/machines.md) · [日本語](../ja/machines.md) · [한국어](../ko/machines.md) · [Deutsch](../de/machines.md) · [Français](../fr/machines.md) · [Español](../es/machines.md) · [Português (BR)](machines.md) · [Bahasa Indonesia](../id/machines.md) · [हिन्दी](../hi/machines.md)
+
 [← SailorBridge](README.md)
 
 # Máquinas
@@ -8,7 +10,7 @@ Uma máquina é um computador que você conecta à sua conta para executar o lí
 
 1. Use uma máquina que você controla com Linux x64 ou macOS arm64 ou x64. Instale o Git. Para conversar e executar tarefas, instale Claude Code ou Codex e entre nesse computador com sua própria conta do motor. Você pode terminar o pareamento antes de entrar no motor.
 2. No aplicativo, abra **Máquinas** e depois **Parear nova máquina**. Copie o comando de instalação mostrado ali para um terminal na máquina que quer conectar. Você pode executá-lo de qualquer diretório. Ele instala `sail`, inicia o pareamento e exibe um código de oito caracteres válido por 10 minutos.
-3. Digite o código em **Código de emparelhamento** no navegador e selecione **Parear**. Compare o nome da máquina e o **Código da chave** com o terminal. No primeiro pareamento, leia o aviso antes de aceitá-lo. Os agents podem ler, alterar e excluir arquivos, usar credenciais e acessar a rede com as permissões do usuário do sistema operacional que executa `sail`. Use uma máquina ou um contêiner dedicado se precisar de isolamento.
+3. Digite o código em **Código de emparelhamento** no navegador e selecione **Parear**. Confira o nome da máquina, a plataforma e a versão do `sail` exibidos. No primeiro pareamento, leia o aviso antes de aceitá-lo. Os agents podem ler, alterar e excluir arquivos, usar credenciais e acessar a rede com as permissões do usuário do sistema operacional que executa `sail`. Use uma máquina ou um contêiner dedicado se precisar de isolamento.
 4. Selecione **Aprovar máquina**. Mantenha a máquina conectada enquanto ela recebe as credenciais e inicia o serviço. Quando **Máquinas** mostrar **On-line** e o terminal confirmar a conexão, você pode selecionar **Configurar Contas** ou **Criar uma Equipe**. [Crie uma equipe](teams.md)
 
 ## Confira a conexão ou pareie mais máquinas
@@ -32,7 +34,7 @@ Para remover a instalação do computador, salve primeiro o trabalho que precisa
 ## Se algo der errado
 
 - Se o pareamento indicar que o Git não está instalado, instale o Git e execute `sail login` para continuar. Você pode resolver um login de motor ausente separadamente com `claude login` ou `codex login` antes de iniciar uma conversa ou tarefa.
-- Se o código expirar, execute `sail login` para gerar outro. Se o nome da máquina ou o **Código da chave** for diferente, selecione **Cancelar pareamento** e confira o terminal na máquina certa. Se o pareamento foi aprovado mas a máquina não se conectou em 10 minutos, execute `sail host status` e depois `sail login` para se reconectar.
+- Se o código expirar, execute `sail login` para gerar outro. Se aparecer outra máquina, confira o código de emparelhamento no terminal da máquina que você quer parear e digite-o de novo. Após a aprovação, você pode selecionar **Cancelar pareamento** até que a máquina receba suas credenciais. Se o pareamento foi aprovado mas a máquina não se conectou em 10 minutos, execute `sail host status` e depois `sail login` para se reconectar.
 - Se uma máquina ficar off-line inesperadamente, confira a rede e o serviço com `sail host status`. O prazo padrão para considerar a máquina off-line é de 90 segundos. A notificação aparece somente depois de 10 minutos off-line e desaparece quando a máquina volta.
 - Se uma atualização falhar, abra a máquina para ler o motivo e execute o comando de reparo exibido como o usuário que instalou `sail`. Se a cópia de segurança local não puder ser usada, use o comando de instalação da página de pareamento.
 - Se a máquina informar que a identidade do servidor mudou, ela recusa a conexão. Use `sail host status --trust` para consultar a impressão digital salva na máquina. Se a mudança de identidade era esperada, execute `sail login`, confira a nova impressão digital no terminal e aprove um novo pareamento.

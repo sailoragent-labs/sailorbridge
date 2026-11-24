@@ -1,3 +1,5 @@
+[English](troubleshooting.md) · [简体中文](zh-CN/troubleshooting.md) · [日本語](ja/troubleshooting.md) · [한국어](ko/troubleshooting.md) · [Deutsch](de/troubleshooting.md) · [Français](fr/troubleshooting.md) · [Español](es/troubleshooting.md) · [Português (BR)](pt-BR/troubleshooting.md) · [Bahasa Indonesia](id/troubleshooting.md) · [हिन्दी](hi/troubleshooting.md)
+
 [← SailorBridge](../README.md)
 
 # Troubleshooting
@@ -17,7 +19,7 @@ Start where the work stopped. For a sign-in or payment, read the message on that
 ## Get a machine or team working
 
 - If installation stops because Git is missing, install Git and rerun the command from **Pair a New Machine**. If Claude Code or Codex is signed out, pairing can finish. Run `claude login` or `codex login` on the machine before asking the team to work.
-- If the pairing code expires, run `sail login` for a new one. Enter it on **Pair a New Machine**, choose **Pair**, and compare the machine name and **Key Code** with the terminal before choosing **Approve Machine**. If the codes differ, cancel the pairing and start again. Approval is followed by a wait for the machine to connect.
+- If the pairing code expires, run `sail login` for a new one. Enter it on **Pair a New Machine**, choose **Pair**, and check the machine name and details shown. Read and accept the notice on your first pairing, then choose **Approve Machine** and wait for the machine to connect.
 - If the machine has not connected within 10 minutes, run `sail host status`. It shows the service state and log path. At the same address, run `sail login` to restore the service. For `origin_mismatch`, if you intend to switch addresses, `sail uninstall` removes the local SailorBridge data, including job working copies. Then run the installation command from the intended app’s **Machines** page and pair again.
 - If an update fails, open the machine in **Machines** and follow the reason and repair command shown. For a download failure, retry later with `sail upgrade`. For a write failure, check disk space and use the account that installed `sail`.
 - If team creation asks for a machine, pair one and wait for **Online**. If you cannot remove a team’s last machine, use **Add a Machine** first. If the team directory cannot be created, choose **Change the Directory in Team Settings**. Use an absolute directory path on the machine where the error occurred. A file in its place, missing write permission, or a read-only disk can prevent creation. [Machines](machines.md) · [Teams](teams.md)

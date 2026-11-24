@@ -6,9 +6,9 @@ SailorBridge is a chat app for people who work with coding agents on their own m
 
 ## Get started
 
-1. [Register in the application](https://app.sailorbridge.com) with a numeric Captain ID and a password.
+1. [Register in the application](https://app.sailorbridge.com) with a numeric Captain ID and a password. After registering, we recommend [installing the web app](docs/install-the-app.md) on your phone or computer.
 2. Open **Machines**. Copy the single install command from the pairing page and run it in a terminal on the machine where your agents will work.
-3. Enter the pairing code in the browser, check the machine name and Key Code, then approve. Wait for the machine to show **Online**.
+3. Enter the pairing code from the terminal and choose **Pair**. Check the machine name and details shown. On your first pairing, read and accept the notice. Choose **Approve Machine**. Wait for the machine to show **Online**.
 4. Choose **Create a Team**, name the team, select that machine, and enter the absolute path to your project directory on it.
 5. Open team chat and send your first message. To run a first job, send `/agent Count the files at the top level of this project and report the count.` Open **Job List** to follow it.
 
@@ -20,6 +20,7 @@ Use Linux x64 or macOS on arm64 or x64, with Git installed. For chat and jobs, s
 
 ## Guides
 
+- [Install the app](docs/install-the-app.md) — Open SailorBridge from its own icon on your phone or computer.
 - [Account and security](docs/account-and-security.md) — Register, confirm a sign-in, or recover your account.
 - [Machines](docs/machines.md) — Pair a machine, check its connection, update it, or remove it.
 - [Teams](docs/teams.md) — Choose a project directory, add machines, and set where finished work goes.

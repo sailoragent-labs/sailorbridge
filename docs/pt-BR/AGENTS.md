@@ -25,7 +25,7 @@ Em **Máquinas**, abra **Parear nova máquina**. Copie o único comando de insta
 
 ## 4. Aprovar a máquina
 
-Digite o código de emparelhamento na página de pareamento do navegador e selecione **Parear**. Compare o nome da máquina e o **Código da chave** com os dados do terminal. No primeiro pareamento, leia e aceite o aviso sobre as permissões do usuário que executa o `sail` e selecione **Aprovar máquina**.
+Digite o código de emparelhamento na página de pareamento do navegador e selecione **Parear**. Confira o nome e os detalhes da máquina que aparece. No primeiro pareamento, leia e aceite o aviso sobre as permissões do usuário que executa o `sail` e selecione **Aprovar máquina**.
 
 **Verificação** — Aguarde o estado **On-line** em **Máquinas**. O terminal também confirma que a máquina está pareada e on-line.
 

@@ -6,9 +6,9 @@ O SailorBridge é um app de conversa para quem trabalha com agents de programaç
 
 ## Primeiros passos
 
-1. [Cadastre-se no aplicativo](https://app.sailorbridge.com) com um ID do capitão numérico e uma senha.
+1. [Cadastre-se no aplicativo](https://app.sailorbridge.com) com um ID do capitão numérico e uma senha. Depois do cadastro, recomendamos [instalar o app da web](install-the-app.md) no celular ou no computador.
 2. Abra **Máquinas**. Copie o único comando de instalação que aparece na página de pareamento e execute-o no terminal da máquina em que seus agents vão trabalhar.
-3. Digite o código de emparelhamento no navegador, confira o nome da máquina e o código da chave e aprove o pareamento. Aguarde até a máquina aparecer como **On-line**.
+3. Digite o código de emparelhamento do terminal e selecione **Parear**. Confira o nome e os detalhes da máquina que aparece. No primeiro pareamento, leia e aceite o aviso e selecione **Aprovar máquina**. Aguarde até a máquina aparecer como **On-line**.
 4. Selecione **Criar uma Equipe**, dê um nome à equipe, escolha essa máquina e informe o caminho absoluto do diretório do projeto nela.
 5. Envie a primeira mensagem na conversa da equipe. Para iniciar a primeira tarefa, envie `/agent Conte os arquivos na raiz do projeto e me diga quantos são.` Acompanhe o andamento em **Lista de tarefas**.
 
@@ -20,6 +20,7 @@ Use Linux x64 ou macOS em arm64 ou x64, com o Git instalado. Para conversar e ex
 
 ## Guias
 
+- [Instalar o app](install-the-app.md) — Abra o SailorBridge pelo ícone próprio no celular ou no computador.
 - [Conta e segurança](account-and-security.md) — Cadastre-se, confirme um login ou recupere sua conta.
 - [Máquinas](machines.md) — Pareie uma máquina, confira a conexão, atualize-a ou remova-a.
 - [Equipes](teams.md) — Escolha um diretório de projeto, adicione máquinas e defina para onde vai o trabalho concluído.

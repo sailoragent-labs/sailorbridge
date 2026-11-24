@@ -1,3 +1,5 @@
+[English](../machines.md) · [简体中文](../zh-CN/machines.md) · [日本語](../ja/machines.md) · [한국어](../ko/machines.md) · [Deutsch](machines.md) · [Français](../fr/machines.md) · [Español](../es/machines.md) · [Português (BR)](../pt-BR/machines.md) · [Bahasa Indonesia](../id/machines.md) · [हिन्दी](../hi/machines.md)
+
 [← SailorBridge](README.md)
 
 # Rechner
@@ -8,7 +10,7 @@ Ein Rechner ist ein Computer, den du mit deinem Konto verbindest, damit er einen
 
 1. Verwende einen Rechner, den du kontrollierst, mit Linux x64 oder macOS auf arm64 oder x64. Installiere Git. Für Chats und Aufträge installiere Claude Code oder Codex und melde dich auf diesem Rechner mit deinem eigenen Motorkonto an. Du kannst das Koppeln vor der Anmeldung beim Motor abschließen.
 2. Öffne in der App **Rechner** und dann **Neuen Rechner koppeln**. Kopiere den angezeigten Installationsbefehl in ein Terminal auf dem Rechner, den du verbinden willst. Du kannst ihn in jedem Verzeichnis ausführen. Er installiert `sail`, startet die Kopplung und zeigt einen achtstelligen Code an, der 10 Minuten lang gültig ist.
-3. Gib den Code im Browser unter **Pairing-Code** ein und wähle **Koppeln**. Vergleiche Rechnernamen und **Schlüssel-Code** mit der Anzeige im Terminal. Lies bei der ersten Kopplung den Hinweis, bevor du ihn akzeptierst. Agents können Dateien lesen, ändern und löschen, Zugangsdaten nutzen und mit den Betriebssystemrechten des Benutzers, der `sail` ausführt, auf das Netzwerk zugreifen. Nutze für eine isolierte Umgebung einen eigenen Rechner oder Container.
+3. Gib den Code im Browser unter **Pairing-Code** ein und wähle **Koppeln**. Prüfe den angezeigten Rechnernamen, die Plattform und die Version von `sail`. Lies bei der ersten Kopplung den Hinweis, bevor du ihn akzeptierst. Agents können Dateien lesen, ändern und löschen, Zugangsdaten nutzen und mit den Betriebssystemrechten des Benutzers, der `sail` ausführt, auf das Netzwerk zugreifen. Nutze für eine isolierte Umgebung einen eigenen Rechner oder Container.
 4. Wähle **Rechner genehmigen**. Lass den Rechner verbunden, während er seine Zugangsdaten abruft und den Dienst startet. Wenn unter **Rechner** der Status **Online** erscheint und das Terminal die Verbindung bestätigt, kannst du **Konten Einrichten** oder **Team Erstellen** wählen. [Team erstellen](teams.md)
 
 ## Die Verbindung prüfen oder weitere Rechner koppeln
@@ -32,7 +34,7 @@ Um SailorBridge vom Computer zu entfernen, sichere zuerst benötigte Arbeit aus 
 ## Wenn es nicht funktioniert
 
 - Meldet die Kopplung, dass Git fehlt, installiere Git und fahre mit `sail login` fort. Eine fehlende Motoranmeldung kannst du vor dem ersten Chat oder Auftrag separat mit `claude login` oder `codex login` nachholen.
-- Läuft der Code ab, fordere mit `sail login` einen neuen an. Stimmt der Rechnername oder der **Schlüssel-Code** nicht überein, wähle **Kopplung abbrechen** und prüfe das Terminal auf dem vorgesehenen Rechner. War die Genehmigung erfolgreich, aber der Rechner hat sich nach 10 Minuten noch nicht verbunden, führe `sail host status` und dann `sail login` aus, um die Verbindung wiederherzustellen.
+- Läuft der Code ab, fordere mit `sail login` einen neuen an. Wird ein anderer Rechner angezeigt, prüfe den Pairing-Code im Terminal auf dem vorgesehenen Rechner und gib ihn erneut ein. Nach der Genehmigung kannst du **Kopplung abbrechen** wählen, solange der Rechner seine Zugangsdaten noch nicht abgeholt hat. War die Genehmigung erfolgreich, aber der Rechner hat sich nach 10 Minuten noch nicht verbunden, führe `sail host status` und dann `sail login` aus, um die Verbindung wiederherzustellen.
 - Geht ein Rechner unerwartet offline, prüfe sein Netzwerk und den Dienst mit `sail host status`. Standardmäßig gilt ein Rechner nach 90 Sekunden als offline. Die Benachrichtigung erscheint erst nach 10 Minuten ohne Verbindung und verschwindet, sobald er wieder online ist.
 - Scheitert ein Update, öffne den Rechner, lies den Grund und führe den angezeigten Reparaturbefehl als der Benutzer aus, der `sail` installiert hat. Lässt sich die lokale Sicherung nicht verwenden, nutze den Installationsbefehl von der Kopplungsseite.
 - Meldet der Rechner eine geänderte Serveridentität, lehnt er die Verbindung ab. Prüfe den gespeicherten Fingerabdruck auf dem Rechner mit `sail host status --trust`. Wenn du die Änderung erwartet hast, führe `sail login` aus, prüfe den neuen Fingerabdruck im Terminal und genehmige eine neue Kopplung.
