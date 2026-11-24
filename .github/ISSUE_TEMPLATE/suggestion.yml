@@ -1,0 +1,17 @@
+name: Suggest an improvement
+description: Tell us what you would like to do with SailorBridge.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Issues are public.** Never paste keys, tokens, pairing codes, passwords, payment details, or private source code.
+        [Report security problems privately](mailto:captain@sailorbridge.com). [Contact support privately about accounts or payments](https://www.sailorbridge.com/contact.html).
+
+        Suggestions in any language are welcome.
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What would you like to improve?
+      description: Tell us what you are trying to do and what change would help.
+    validations:
+      required: true

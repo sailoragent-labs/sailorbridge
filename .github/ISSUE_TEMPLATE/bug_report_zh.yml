@@ -1,0 +1,54 @@
+name: 报告问题（简体中文）
+description: 报告你在使用 SailorBridge 时遇到的问题。
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **这里的问题会公开。** 请勿粘贴密钥、令牌、配对码、密码、支付信息或私有源代码。
+        [私下报告安全问题](mailto:captain@sailorbridge.com)。[账号或付款问题请私下联系支持](https://www.sailorbridge.com/contact.html)。
+  - type: textarea
+    id: observed
+    attributes:
+      label: 发生了什么？
+      description: 请描述你看到的现象。如果报错内容可以安全公开，也请附上。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 你预期会发生什么？
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 怎样能重现这个问题？
+      description: 请从你打开的页面或做的第一步写起。
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: 你在哪里遇到了问题？
+      multiple: true
+      options:
+        - 电脑浏览器
+        - 手机
+        - 机器上的 sail
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 产品显示的版本
+      description: sail 的版本可以在机器页查看，也可以运行 `sail --version` 查看。如果看不到，可以留空。
+  - type: input
+    id: os
+    attributes:
+      label: 机器的操作系统（如知道）
+      placeholder: 例如 macOS（arm64）
+  - type: input
+    id: engine
+    attributes:
+      label: 引擎（如适用）
+      placeholder: 例如 Claude Code 或 Codex

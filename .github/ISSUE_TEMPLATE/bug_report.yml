@@ -1,0 +1,54 @@
+name: Bug report (English)
+description: Report a problem you saw while using SailorBridge.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Issues are public.** Never paste keys, tokens, pairing codes, passwords, payment details, or private source code.
+        [Report security problems privately](mailto:captain@sailorbridge.com). [Contact support privately about accounts or payments](https://www.sailorbridge.com/contact.html).
+  - type: textarea
+    id: observed
+    attributes:
+      label: What happened?
+      description: Describe what you saw. Include the error message if you can share it safely.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to see the problem
+      description: Start with the page you opened or the action you took.
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where did you see the problem?
+      multiple: true
+      options:
+        - Browser on a computer
+        - Phone
+        - sail on the machine
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version shown by the product
+      description: For sail, use the version on the Machines page or the output of `sail --version`. Leave blank if unavailable.
+  - type: input
+    id: os
+    attributes:
+      label: Machine operating system, if known
+      placeholder: e.g. macOS on arm64
+  - type: input
+    id: engine
+    attributes:
+      label: Engine, if applicable
+      placeholder: e.g. Claude Code or Codex

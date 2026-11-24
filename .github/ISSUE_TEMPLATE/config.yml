@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security problem privately
+    url: https://github.com/sailoragent-labs/sailorbridge/security/policy
+    about: Email captain@sailorbridge.com privately. Never open a public issue for a security problem.
+  - name: Account or payment questions
+    url: https://www.sailorbridge.com/contact.html
+    about: Contact support privately. Keep account and payment questions out of public issues.
