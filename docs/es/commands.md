@@ -34,6 +34,18 @@ Usa el número de la lista correspondiente del equipo. Las tareas, los eventos y
 
 Por ejemplo, envía `/agent Count the top-level files in this project.` Si envías tú un flujo en segundo plano, autorizas la tarea. El **Líder** redacta la descripción a partir de la conversación. Si **Iniciar directamente** está activado, tus palabras pasan directamente a la cola. Abre **Ver detalles** en la fila de la tarea en el chat para seguirla. Cuando el **Líder** proponga un flujo en segundo plano en una conversación normal, lee la tarjeta y elige **Sí, Hazlo** para iniciarlo. [Flujos y eventos programados](flows-and-scheduled-events.md)
 
+## Instrucciones firmadas para acciones protegidas
+
+SailorBridge firma automáticamente los mensajes que envías a tu equipo, incluidos los comandos de flujo como `/agent` y las instrucciones privadas a tu equipo en una sesión de agents. También firma las respuestas y aprobaciones en tarjetas, incluidas las de tareas y comandos, y las instrucciones que guardas en eventos programados. Las acciones de tareas como **Rehacer** y **Continuar** también se firman cuando están disponibles.
+
+Cuando usas `sail exec`, la máquina vinculada que envía el comando a otra máquina del equipo firma la solicitud. Una conversación con un amigo es un chat normal. Los mensajes reenviados y las respuestas de agentes pueden servir de contexto.
+
+Antes de usar una instrucción protegida, la máquina que la recibe comprueba que procede de un dispositivo autorizado para la cuenta y que coincide con el equipo y la acción previstos. Al aprobar un comando, también comprueba la tarjeta, el comando y el destino concretos. Si falta una firma obligatoria, ha caducado, entra en conflicto con una aprobación más reciente o no coincide con la acción, la máquina rechaza la acción. Un mensaje de equipo que la máquina no puede verificar como tuyo no puede autorizar trabajo.
+
+En **Seguridad**, abre **Eventos de seguridad recientes** para ver el aviso **Una máquina no pudo verificar el contenido** y el trabajo afectado. Revisa y vuelve a enviar la instrucción rechazada o inicia de nuevo la tarea. Si no se usó una respuesta, actualiza la tarjeta y responde de nuevo. Si se rechazó la aprobación de un comando, revísalo y vuelve a aprobarlo en una tarjeta vigente. Si se omitió un evento programado, revísalo y vuelve a guardarlo. Si `sail exec` indica que falló la verificación, el comando remoto no se ejecutó.
+
+Si la aplicación muestra **Preparando este dispositivo**, déjala abierta y conecta un dispositivo usado anteriormente que pueda autorizar trabajo. La aplicación deja la acción en espera y la envía cuando está lista y puede comprobar que la acción sigue vigente.
+
 ## Vincular, comprobar o quitar una máquina
 
 | Comando de terminal | Cuándo usarlo |

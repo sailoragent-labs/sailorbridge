@@ -12,13 +12,13 @@ Deine numerische **Kapitän-ID** ist dein Anmeldename. Sie bleibt deinem Konto z
 
 ## Anmelden und einen neuen Browser bestätigen
 
-Wähle **Melden Sie sich an** und gib deine **Kapitän-ID** und dein **Passwort** ein. Ein neuer Browser verlangt eine Bestätigung, wenn du einen gekoppelten Rechner hast oder die Bestätigung in zwei Schritten nutzt. Ist die Bestätigung in zwei Schritten aktiv, musst du jede Anmeldung bestätigen, auch in einem bekannten Browser.
+Gib deine **Kapitän-ID** ein und wähle **Weiter**. Gib dann dein **Passwort** ein und wähle **Melden Sie sich an**. Wenn ein Rechner gekoppelt ist, verlangt SailorBridge in einem neuen Browser automatisch eine Bestätigung. Bei ausgeschalteter Bestätigung in zwei Schritten genügt in einem bekannten Browser das Passwort. Ohne gekoppelten Rechner und ohne Bestätigung in zwei Schritten genügt es auch in einem neuen Browser. Wenn du die optionale **Bestätigung in zwei Schritten** aktivierst, ist bei jeder Anmeldung eine Bestätigung nötig, auch in bekannten Browsern.
 
 Nutze unter **Bestätige, dass du es bist** eine der angebotenen Methoden.
 
 - Gib unter **Authenticator-Code** den aktuellen Code deiner Authenticator-App ein.
 - Führe für **Code vom Rechner** den Befehl `sail confirm` im Terminal eines gekoppelten Rechners aus. Gib den achtstelligen Code auf der Anmeldeseite ein.
-- Zeigt die Seite eine zweistellige Zahl, öffne einen anderen Browser, in dem du bereits angemeldet bist. Prüfe, ob der **Schlüssel-Code** auf beiden Bildschirmen übereinstimmt, und tippe dann auf die zweistellige Zahl von der Anmeldeseite. Hat jemand anderes die Anfrage ausgelöst, wähle **Das war ich nicht**.
+- Für die **Bestätigung im Browser** öffnest du einen anderen bekannten Browser, in dem du bereits angemeldet bist. Tippe in der Abfrage auf die zweistellige Zahl von der Anmeldeseite. Bestätige nur eine Anmeldung, die du selbst begonnen hast. Wähle andernfalls **Das war ich nicht**.
 
 ## Profil einrichten und die Anmeldung schützen
 
@@ -28,13 +28,15 @@ Nutze unter **Bestätige, dass du es bist** eine der angebotenen Methoden.
 
 Um dein Passwort zu ändern, fülle **Aktuelles Passwort**, **Neues Passwort** und **Bestätigen Sie das neue Passwort** unter **Sicherheit** aus. Gib einen Authenticator-Code ein, wenn die Bestätigung in zwei Schritten aktiv ist. Nach der Änderung bist du in diesem Browser angemeldet. Andere Sitzungen werden abgemeldet.
 
-## Aktivitäten und Geräteschlüssel prüfen
+<a name="aktivitäten-und-geräteschlüssel-prüfen"></a>
+
+## Aktivitäten und Geräte prüfen
 
 Öffne **Ich**, dann **Sicherheit** und **Letzte Sicherheitsereignisse**. Die Liste umfasst die letzten 90 Tage. Nach einer erfolgreichen Anmeldung in einem neuen Browser wirst du gefragt, ob du es warst. Wähle **Das war ich** oder **Das war ich nicht**. Jeder Browser speichert seine Bestätigungen separat. Fehlgeschlagene Anmeldungen erscheinen ohne Bestätigungsaufforderung in der Liste.
 
-Wenn du eine fremde Anmeldung siehst, ändere dein Passwort. Mit **Andere Sitzungen abmelden** meldest du deine anderen Browser ab. Wenn du nur einen Rechner trennen willst, entferne ihn unter **Rechner**. **Alle Rechner widerrufen** trennt alle gekoppelten Rechner. Du musst sie erneut koppeln, bevor sie arbeiten oder einen Wiederherstellungscode ausgeben können. Du kannst auch einen einzelnen Sicherheitseintrag nach Bestätigung löschen. Andere Browser zeigen ihre eigenen Warnungen an, bis das Ereignis dort bestätigt wird.
+Wenn du eine fremde Anmeldung siehst, ändere dein Passwort. Mit **Andere Sitzungen abmelden** meldest du andere Browser und Apps ab und bleibst hier angemeldet. Wenn du nur einen Rechner trennen willst, entferne ihn unter **Rechner**. **Alle Rechner widerrufen** trennt alle gekoppelten Rechner. Du musst sie erneut koppeln, bevor sie arbeiten oder einen Wiederherstellungscode ausgeben können. Du kannst auch einen einzelnen Sicherheitseintrag nach Bestätigung löschen. Andere Browser zeigen ihre eigenen Warnungen an, bis das Ereignis dort bestätigt wird.
 
-Öffne unter **Sicherheit** den Bereich **Schlüssel**, um die Browser und Rechner zu sehen, die in deinem Namen signieren. Um einen neuen Browser hinzuzufügen, öffne **Wartet auf Aufnahme** in einem Browser, der bereits in der Liste steht. Vergleiche den 12-stelligen Kurzcode in beiden Browsern und wähle **Hinzufügen** nur, wenn die Codes übereinstimmen. Wähle **Entfernen** für einen nicht mehr verwendeten Schlüssel oder **Als gestohlen markieren** für ein verlorenes Gerät. Beim Entfernen eines Rechnerschlüssels wird der Rechner ausgemustert. Hast du auf einem Rechner das Zurücksetzen der Schlüsselliste gestartet, prüfe den Rechnernamen, bevor du es im Browser bestätigst.
+Öffne unter **Sicherheit** die Seite **Geräte**. Dort siehst du deine Apps und gekoppelten Rechner. Wähle ein Gerät und dann **Entfernen**, damit das Gerät keine neuen Aktionen mehr autorisieren kann. Dadurch wird die App abgemeldet oder der Rechner getrennt. Wähle bei einem fehlenden Gerät **Verloren oder gestohlen**. SailorBridge akzeptiert dann auch keine Inhalte mehr, die dieses Gerät früher autorisiert hat.
 
 ## Vergessenes Passwort wiederherstellen
 

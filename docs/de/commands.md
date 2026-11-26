@@ -34,6 +34,18 @@ Verwende die Nummer aus der passenden Liste des Teams. Aufträge, Ereignisse und
 
 Sende zum Beispiel `/agent Count the top-level files in this project.` Wenn du einen Hintergrundablauf selbst sendest, genehmigst du den Auftrag. Der **Leiter** schreibt die Aufgabenbeschreibung anhand des Gesprächs. Ist **Direkt starten** aktiv, kommt dein Text direkt in die Warteschlange. Öffne **Details** in der Chatzeile des Auftrags, um ihn zu verfolgen. Wenn der **Leiter** im normalen Chat einen Hintergrundablauf vorschlägt, lies die Karte und wähle **Ja, Machen**, um ihn zu starten. [Abläufe und geplante Ereignisse](flows-and-scheduled-events.md)
 
+## Signierte Anweisungen für geschützte Aktionen
+
+SailorBridge signiert Nachrichten an dein Team automatisch. Dazu gehören Ablaufbefehle wie `/agent` und private Anweisungen an dein Team in einer Agentensitzung. Auch Antworten und Freigaben auf Karten, etwa für Aufträge und Befehle, sowie Anweisungen in gespeicherten geplanten Ereignissen werden signiert. Auch Auftragsaktionen wie **Erneut ausführen** und **Fortsetzen** werden signiert, wenn sie verfügbar sind.
+
+Bei `sail exec` signiert der gekoppelte Rechner die Anfrage an den anderen Teamrechner. Gespräche mit Freunden sind gewöhnliche Chats. Weitergeleitete Nachrichten und Antworten von Agenten können als Kontext für die Arbeit dienen.
+
+Bevor der empfangende Rechner eine geschützte Anweisung verwendet, prüft er, ob sie von einem für das Konto autorisierten Gerät stammt und zum vorgesehenen Team und zur Aktion passt. Bei einer Befehlsfreigabe prüft er auch die konkrete Karte, den Befehl und das Ziel. Fehlt eine erforderliche Signatur, ist sie abgelaufen, widerspricht sie einer neueren Freigabe oder passt sie nicht zur Aktion, lehnt der Rechner die Aktion ab. Eine Teamnachricht, deren Absender er nicht als dich bestätigen kann, kann keine Arbeit autorisieren.
+
+Unter **Sicherheit** findest du in **Letzte Sicherheitsereignisse** den Hinweis **Eine Maschine konnte Inhalte nicht überprüfen** und die betroffene Arbeit. Prüfe eine abgelehnte Anweisung und sende sie erneut oder starte den Auftrag noch einmal. Wurde eine Antwort nicht verwendet, aktualisiere die Karte und antworte erneut. Wurde eine Befehlsfreigabe abgelehnt, prüfe den Befehl und genehmige ihn erneut auf einer aktuellen Karte. Wurde ein geplantes Ereignis übersprungen, prüfe es und speichere es erneut. Meldet `sail exec` eine fehlgeschlagene Prüfung, wurde der Befehl auf dem anderen Rechner nicht ausgeführt.
+
+Zeigt die App **Dieses Gerät wird vorbereitet**, lass sie geöffnet und bring ein früher verwendetes Gerät online, das Arbeit autorisieren kann. Die App hält deine Aktion zurück, bis sie bereit ist und prüfen kann, ob die Aktion noch aktuell ist.
+
 ## Einen Rechner koppeln, prüfen oder entfernen
 
 | Terminalbefehl | Wann du ihn nutzt |

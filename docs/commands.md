@@ -34,6 +34,18 @@ Use the number from the relevant team’s list. Jobs, events, and memories each 
 
 For example, send `/agent Count the top-level files in this project.` Sending a background flow yourself authorizes the job. The **Leader** writes the task using the conversation, or your words go straight to the queue if **Start Directly** is on. Open **Details** on the job’s chat row to follow it. When the **Leader** proposes a background flow in response to ordinary chat, read the card and choose **Yes, Do It** to start it. [Flows and scheduled events](flows-and-scheduled-events.md)
 
+## Signed instructions for protected actions
+
+SailorBridge automatically signs messages you send to your team, including flow commands such as `/agent` and private instructions to your team in an agent session. It also signs answers and approvals on cards, including job and command approvals, and the instructions you save in scheduled events. Job actions such as **Redo** and **Continue** are also signed when available.
+
+A paired machine signs requests it sends to another team machine with `sail exec`. A conversation with a friend is ordinary chat. Forwarded messages and agent replies can provide context for work.
+
+Before using a protected instruction, the receiving machine checks that it came from a device authorized for the account and matches the team and the action it was sent for. For a command approval, the check covers the specific card, command and target. If a required signature is missing, has expired, conflicts with a newer approval or does not match the action, the machine refuses that action. A team message it cannot verify as yours cannot authorize work.
+
+Look in **Recent Security Events** under **Security** for **A machine couldn’t verify content** and the affected work. Review and resend a refused instruction or start the job again. If an answer was unused, refresh the card and answer again. If a command approval was refused, review the command and approve it again on a current card. If a scheduled event was skipped, review and save it again. If `sail exec` reports that verification failed, the remote command did not run.
+
+If the app shows **Getting this device ready**, keep it open and bring a previously used device that can authorize work online. The app holds your action while it gets ready and sends it when it can verify that the action is still current.
+
 ## Pair, check, or remove a machine
 
 | Terminal command | When to use it |

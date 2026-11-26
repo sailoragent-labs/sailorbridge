@@ -34,6 +34,18 @@ Gunakan nomor dari daftar yang sesuai untuk tim itu. Tugas, acara, dan entri mem
 
 Contohnya, kirim `/agent Count the top-level files in this project.` Mengirim sendiri alur latar belakang berarti mengizinkan tugas dijalankan. **Pemimpin** menulis tugas berdasarkan percakapan, atau teks Anda langsung masuk antrean jika **Langsung mulai** aktif. Buka **Lihat detail** di baris tugas dalam obrolan untuk memantaunya. Saat **Pemimpin** mengusulkan alur latar belakang sebagai balasan atas chat biasa, baca kartunya dan pilih **Ya, Kerjakan** untuk memulai. [Alur dan acara terjadwal](flows-and-scheduled-events.md)
 
+## Instruksi bertanda tangan untuk tindakan yang dilindungi
+
+SailorBridge otomatis menandatangani pesan yang Anda kirim ke tim, termasuk perintah alur seperti `/agent` dan instruksi pribadi untuk tim Anda dalam sesi agent. Jawaban dan persetujuan pada kartu, termasuk persetujuan tugas dan perintah, serta instruksi yang disimpan di acara terjadwal juga ditandatangani. Tindakan tugas seperti **Ulangi** dan **Lanjutkan** juga ditandatangani jika tersedia.
+
+Saat memakai `sail exec`, mesin yang sudah dipasangkan dan mengirim perintah ke mesin tim lain akan menandatangani permintaan itu. Percakapan dengan teman adalah obrolan biasa. Pesan terusan dan balasan agen dapat menjadi konteks pekerjaan.
+
+Sebelum menggunakan instruksi yang dilindungi, mesin penerima memastikan instruksi berasal dari perangkat yang diizinkan untuk akun tersebut dan cocok dengan tim serta tindakan yang dituju. Untuk persetujuan perintah, mesin juga memeriksa kartu, perintah, dan tujuan yang bersangkutan. Jika tanda tangan yang diperlukan tidak ada, kedaluwarsa, bertentangan dengan persetujuan yang lebih baru, atau tidak cocok dengan tindakan, mesin menolak tindakan tersebut. Pesan tim yang tidak dapat dipastikan berasal dari Anda tidak bisa mengizinkan pekerjaan.
+
+Buka **Catatan keamanan terbaru** di **Keamanan** untuk melihat pemberitahuan **Mesin tidak dapat memverifikasi konten** dan pekerjaan yang terdampak. Tinjau lalu kirim ulang instruksi yang ditolak atau mulai lagi tugasnya. Jika jawaban tidak digunakan, muat ulang kartu dan jawab lagi. Jika persetujuan perintah ditolak, tinjau perintah dan setujui kembali pada kartu yang masih berlaku. Jika acara terjadwal dilewati, periksa dan simpan kembali. Jika `sail exec` melaporkan kegagalan verifikasi, perintah jarak jauh tidak dijalankan.
+
+Jika aplikasi menampilkan **Menyiapkan perangkat ini**, biarkan aplikasi tetap terbuka dan hubungkan perangkat yang pernah dipakai dan masih dapat mengizinkan pekerjaan. Aplikasi menahan tindakan selama persiapan dan mengirimkannya setelah siap dan dapat memastikan tindakan itu masih berlaku.
+
 ## Pasangkan, periksa, atau keluarkan mesin
 
 | Perintah terminal | Kapan digunakan |

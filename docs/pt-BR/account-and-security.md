@@ -12,13 +12,13 @@ Seu **ID do capitão** numérico é o nome que você usa para entrar. Ele perman
 
 ## Entre e confirme um novo navegador
 
-Selecione **Entrar** e preencha **ID do capitão** e **Senha**. Um novo navegador pede confirmação se você tem uma máquina pareada ou usa verificação em duas etapas. Com a verificação em duas etapas ativada, você precisa confirmar cada acesso, mesmo em um navegador conhecido.
+Preencha o **ID do capitão** e selecione **Próximo**. Depois preencha a **Senha** e selecione **Faça login**. Se você tem uma máquina pareada, o SailorBridge pede confirmação automaticamente em um navegador novo. Com a verificação em duas etapas desativada, a senha basta em um navegador reconhecido. Sem máquina pareada e sem verificação em duas etapas, a senha também basta em um navegador novo. A **Verificação em duas etapas** é opcional. Ao ativá-la, você precisa confirmar cada login, mesmo em um navegador conhecido.
 
 Na tela **Confirme que é você**, use um dos métodos oferecidos.
 
 - Para **Código do autenticador**, digite o código atual do seu aplicativo autenticador.
 - Para **Código da máquina**, execute `sail confirm` no terminal de uma máquina pareada. Digite o código de oito caracteres na página de login.
-- Se a página mostrar um número de dois dígitos, abra outro navegador em que você já tenha uma sessão iniciada. Confira se o **Código da chave** é igual nas duas telas e toque no número de dois dígitos da página de login. Se outra pessoa iniciou a solicitação, selecione **Não fui eu**.
+- Para a **Confirmação pelo navegador**, abra outro navegador conhecido em que você já tenha uma sessão iniciada. No aviso de confirmação, toque no número de dois dígitos exibido na página de login. Aprove apenas um login que você iniciou. Se outra pessoa o iniciou, selecione **Não fui eu**.
 
 ## Configure seu perfil e proteja seu acesso
 
@@ -28,13 +28,15 @@ Abra **Segurança** e depois **Verificação em duas etapas**. Selecione **Ativa
 
 Para alterar a senha, preencha **Senha atual**, **Nova senha** e **Confirme a nova senha** em **Segurança**. Digite um código do autenticador se a verificação em duas etapas estiver ativa. Depois da alteração, este navegador fica conectado e as outras sessões são encerradas.
 
-## Confira a atividade e as chaves dos dispositivos
+<a name="confira-a-atividade-e-as-chaves-dos-dispositivos"></a>
+
+## Confira a atividade e os dispositivos
 
 Abra **Eu**, depois **Segurança** e **Registros de segurança recentes**. A lista abrange os últimos 90 dias. Quando há um login bem-sucedido em um novo navegador, o aplicativo pergunta se foi você. Selecione **Fui eu** ou **Não fui eu**. Cada navegador registra suas próprias confirmações. Tentativas de login malsucedidas aparecem na lista sem pedido de confirmação.
 
-Se vir um login que você não fez, altere a senha. A opção **Sair das outras sessões** encerra as sessões nos outros navegadores. Se precisar desconectar apenas uma máquina, desative-a em **Máquinas**. A opção **Revogar todas as máquinas** desconecta todas as máquinas pareadas. Você terá de parear cada uma novamente para que possa trabalhar ou fornecer um código de recuperação. Você também pode excluir um registro de segurança após confirmar. Os outros navegadores continuam recebendo seus próprios alertas até confirmar o evento.
+Se vir um login que você não fez, altere a senha. A opção **Sair das outras sessões** encerra as sessões nos outros navegadores e aplicativos e mantém esta sessão aberta. Se precisar desconectar apenas uma máquina, desative-a em **Máquinas**. A opção **Revogar todas as máquinas** desconecta todas as máquinas pareadas. Você terá de parear cada uma novamente para que possa trabalhar ou fornecer um código de recuperação. Você também pode excluir um registro de segurança após confirmar. Os outros navegadores continuam recebendo seus próprios alertas até confirmar o evento.
 
-Em **Segurança**, abra **Chaves** para ver os navegadores e as máquinas que assinam operações em seu nome. Para adicionar um navegador, abra **Aguardando entrada** em um navegador que já esteja na lista. Compare o código curto de 12 caracteres nos dois navegadores e selecione **Adicionar** somente se os códigos forem iguais. Use **Remover** para uma chave que você não usa mais ou **Marcar como roubada** para um dispositivo perdido. A remoção da chave de uma máquina desativa essa máquina. Se você iniciou uma redefinição da lista de chaves em uma máquina, só confirme no navegador depois de conferir o nome da máquina.
+Em **Segurança**, abra **Dispositivos** para ver seus aplicativos e máquinas pareadas. Selecione um dispositivo e escolha **Remover** para impedir que ele autorize novas ações. A sessão do aplicativo será encerrada ou a máquina será desconectada. Se o dispositivo sumiu, escolha **Perdido ou roubado**. O SailorBridge também deixará de aceitar conteúdo autorizado anteriormente por esse dispositivo.
 
 ## Recupere uma senha esquecida
 

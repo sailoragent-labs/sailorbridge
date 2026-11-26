@@ -34,6 +34,18 @@ Use o número da lista correspondente da equipe. Tarefas, eventos e registros de
 
 Por exemplo, envie `/agent Count the top-level files in this project.` Enviar um fluxo em segundo plano por conta própria autoriza a tarefa. O **Líder** redige a tarefa com base na conversa ou, se **Iniciar direto** estiver ativado, seu texto vai direto para a fila. Abra **Ver detalhes** na linha da tarefa na conversa para acompanhá-la. Se o **Líder** propuser um fluxo em segundo plano em resposta a uma mensagem comum, leia o cartão e selecione **Sim, Faça** para iniciá-lo. [Fluxos e eventos agendados](flows-and-scheduled-events.md)
 
+## Instruções assinadas para ações protegidas
+
+O SailorBridge assina automaticamente as mensagens que você envia para sua equipe, incluindo comandos de fluxo como `/agent` e instruções privadas para sua equipe em uma sessão de agents. Também assina respostas e aprovações em cartões, incluindo aprovações de tarefas e comandos, e instruções salvas em eventos agendados. Ações de tarefas como **Refazer** e **Continuar** também são assinadas quando estão disponíveis.
+
+Ao usar `sail exec`, a máquina pareada que envia o comando a outra máquina da equipe assina a solicitação. Uma conversa com um amigo é uma conversa comum. Mensagens encaminhadas e respostas de agentes podem servir de contexto.
+
+Antes de usar uma instrução protegida, a máquina que a recebe verifica se ela veio de um dispositivo autorizado pela conta e se corresponde à equipe e à ação previstas. Para aprovar um comando, ela também verifica o cartão, o comando e o destino exatos. Se uma assinatura obrigatória estiver ausente, tiver expirado, entrar em conflito com uma aprovação mais recente ou não corresponder à ação, a máquina recusa a ação. Uma mensagem para a equipe que a máquina não conseguir verificar como sua não pode autorizar trabalho.
+
+Em **Segurança**, abra **Registros de segurança recentes** para ver o aviso **Uma máquina não conseguiu verificar o conteúdo** e o trabalho afetado. Confira e reenvie a instrução recusada ou inicie a tarefa novamente. Se uma resposta não foi usada, atualize o cartão e responda de novo. Se a aprovação de um comando foi recusada, confira o comando e volte a aprová-lo em um cartão atualizado. Se um evento agendado foi ignorado, confira e salve-o novamente. Se `sail exec` informar que a verificação falhou, o comando remoto não foi executado.
+
+Se o app mostrar **Preparando este dispositivo**, deixe-o aberto e conecte um dispositivo já usado que possa autorizar trabalho. O app mantém a ação em espera e a envia quando estiver pronto e puder verificar que ela continua válida.
+
 ## Pareie, verifique ou remova uma máquina
 
 | Comando de terminal | Quando usar |

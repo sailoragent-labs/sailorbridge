@@ -34,6 +34,18 @@ Utilisez le numéro de la liste correspondante dans votre équipe. Les tâches, 
 
 Par exemple, envoyez `/agent Count the top-level files in this project.` Envoyer vous-même un flux en arrière-plan autorise la tâche. Le **Leader** rédige la consigne à partir de la conversation. Si **Démarrer directement** est activé, vos mots entrent directement en file. Ouvrez **Voir le détail** sur la ligne de la tâche dans la discussion pour la suivre. Quand le **Leader** propose un flux en arrière-plan dans la conversation, lisez la carte et choisissez **Oui, Fais-le** pour le lancer. [Flux et événements planifiés](flows-and-scheduled-events.md)
 
+## Instructions signées pour les actions protégées
+
+SailorBridge signe automatiquement les messages que vous envoyez à votre équipe, notamment les commandes de flux comme `/agent` et les instructions privées à votre équipe dans une session d’agents. Les réponses et les approbations sur les cartes, y compris celles de tâches et de commandes, ainsi que les instructions enregistrées dans les événements planifiés sont aussi signées. Les actions **Refaire** et **Continuer** sont aussi signées lorsqu’elles sont disponibles pour une tâche.
+
+Avec `sail exec`, c’est la machine associée qui envoie la commande à une autre machine de l’équipe qui signe la demande. Une conversation avec un ami relève de la discussion ordinaire. Les messages transférés et les réponses des agents peuvent servir de contexte.
+
+Avant d’utiliser une instruction protégée, la machine qui la reçoit vérifie qu’elle provient d’un appareil autorisé pour le compte et qu’elle correspond à l’équipe et à l’action prévues. Pour une approbation de commande, elle vérifie aussi la carte, la commande et la cible. Si une signature requise est absente, a expiré, contredit une approbation plus récente ou ne correspond pas à l’action, la machine refuse l’action. Un message d’équipe que la machine ne peut pas vous attribuer ne peut pas autoriser de travail.
+
+Dans **Sécurité**, ouvrez **Événements de sécurité récents** pour consulter l’avis **Une machine n’a pas pu vérifier le contenu** et voir les actions concernées. Relisez et renvoyez l’instruction refusée ou relancez la tâche. Si une réponse n’a pas été utilisée, actualisez la carte et répondez de nouveau. Si une approbation de commande a été refusée, vérifiez la commande et approuvez-la sur une carte à jour. Si un événement planifié a été ignoré, vérifiez-le et enregistrez-le de nouveau. Si `sail exec` signale un échec de vérification, la commande distante n’a pas été exécutée.
+
+Si l’app affiche **Préparation de cet appareil**, laissez-la ouverte et reconnectez un appareil déjà utilisé qui peut autoriser des actions. L’app garde votre action en attente et l’envoie lorsqu’elle est prête et que l’action est toujours d’actualité.
+
 ## Associer, vérifier ou retirer une machine
 
 | Commande de terminal | Quand l’utiliser |

@@ -12,13 +12,13 @@
 
 ## Masuk dan konfirmasikan browser baru
 
-Pilih **Masuk** dan masukkan **ID Kapten** serta **Kata Sandi**. Browser baru meminta konfirmasi jika Anda sudah menyandingkan mesin atau menggunakan verifikasi dua langkah. Jika verifikasi dua langkah aktif, Anda harus mengonfirmasi setiap kali masuk, termasuk di browser yang sudah dikenal.
+Masukkan **ID Kapten**, pilih **Berikutnya**, lalu masukkan **Kata Sandi** dan pilih **Masuk**. Jika sudah ada mesin yang disandingkan, SailorBridge otomatis meminta konfirmasi di browser baru. Saat verifikasi dua langkah nonaktif, kata sandi saja cukup untuk masuk di browser yang sudah dikenal. Jika belum ada mesin yang disandingkan dan verifikasi dua langkah nonaktif, kata sandi saja juga cukup di browser baru. **Verifikasi dua langkah** bersifat opsional. Setelah diaktifkan, Anda harus mengonfirmasi setiap kali masuk, termasuk di browser yang sudah dikenal.
 
 Di **Konfirmasi bahwa ini Anda**, gunakan salah satu metode yang tersedia.
 
 - Untuk **Kode autentikator**, masukkan kode terkini dari aplikasi autentikator.
 - Untuk **Kode dari mesin**, jalankan `sail confirm` di terminal mesin yang telah disandingkan. Masukkan kode delapan karakter di halaman masuk.
-- Jika halaman menampilkan nomor dua digit, buka browser lain tempat Anda sudah masuk. Pastikan **Kode kunci** sama pada kedua layar, lalu ketuk nomor dua digit dari halaman masuk. Jika orang lain yang memulai permintaan, pilih **Bukan saya**.
+- Untuk **Konfirmasi lewat browser**, buka browser lain yang sudah dikenal dan tempat Anda masih masuk. Pada permintaan persetujuan, ketuk nomor dua digit yang tampil di halaman masuk. Setujui hanya proses masuk yang Anda mulai sendiri. Jika orang lain yang memulainya, pilih **Bukan saya**.
 
 ## Atur profil dan lindungi proses masuk
 
@@ -28,13 +28,15 @@ Buka **Keamanan**, lalu **Verifikasi dua langkah**. Pilih **Aktifkan**, verifika
 
 Untuk mengubah kata sandi, isi **Kata Sandi Saat Ini**, **Kata Sandi Baru**, dan **Konfirmasi kata sandi baru** di bagian **Keamanan**. Masukkan kode autentikator jika verifikasi dua langkah aktif. Setelah perubahan, Anda tetap masuk di browser ini dan sesi lain berakhir.
 
-## Periksa aktivitas dan kunci perangkat
+<a name="periksa-aktivitas-dan-kunci-perangkat"></a>
+
+## Periksa aktivitas dan perangkat
 
 Buka **Saya**, lalu **Keamanan** dan **Catatan keamanan terbaru**. Daftar mencakup 90 hari terakhir. Jika ada login yang berhasil di browser baru, aplikasi akan bertanya apakah itu Anda. Pilih **Ini saya** atau **Bukan saya**. Setiap browser mencatat konfirmasinya sendiri. Percobaan masuk yang gagal muncul di daftar tanpa permintaan persetujuan.
 
-Jika melihat login yang tidak Anda lakukan, ubah kata sandi. **Keluar dari Sesi Lain** mengakhiri sesi di browser lain. Jika hanya perlu memutus satu mesin, keluarkan mesin itu dari **Mesin**. **Cabut semua mesin** memutus semua mesin yang telah disandingkan. Anda harus memasangkan masing-masing lagi agar bisa bekerja atau memberikan kode pemulihan. Anda juga bisa menghapus satu catatan keamanan setelah mengonfirmasi. Browser lain tetap menerima pemberitahuannya sendiri sampai mengonfirmasi kejadian tersebut.
+Jika melihat login yang tidak Anda lakukan, ubah kata sandi. **Keluar dari Sesi Lain** mengakhiri sesi di browser dan aplikasi lain, sementara sesi ini tetap aktif. Jika hanya perlu memutus satu mesin, keluarkan mesin itu dari **Mesin**. **Cabut semua mesin** memutus semua mesin yang telah disandingkan. Anda harus memasangkan masing-masing lagi agar bisa bekerja atau memberikan kode pemulihan. Anda juga bisa menghapus satu catatan keamanan setelah mengonfirmasi. Browser lain tetap menerima pemberitahuannya sendiri sampai mengonfirmasi kejadian tersebut.
 
-Di **Keamanan**, buka **Kunci** untuk melihat browser dan mesin yang menandatangani pekerjaan atas nama Anda. Untuk menambahkan browser baru, buka **Menunggu bergabung** di browser yang sudah ada dalam daftar. Bandingkan kode pendek 12 karakter di kedua browser dan pilih **Tambahkan** hanya jika kodenya cocok. Gunakan **Keluarkan** untuk kunci yang sudah tidak dipakai atau **Tandai dicuri** untuk perangkat yang hilang. Mengeluarkan kunci mesin juga mengeluarkan mesin itu dari akun. Jika Anda memulai pengaturan ulang daftar kunci di sebuah mesin, konfirmasikan di browser setelah memeriksa nama mesinnya.
+Di **Keamanan**, buka **Perangkat** untuk melihat aplikasi dan mesin yang sudah dipasangkan. Pilih perangkat lalu pilih **Keluarkan** agar perangkat itu tidak dapat mengizinkan tindakan baru. Sesi aplikasi akan diakhiri atau sambungan mesin akan diputus. Jika perangkat hilang, pilih **Hilang atau dicuri**. SailorBridge juga akan berhenti menerima konten yang sebelumnya diizinkan oleh perangkat itu.
 
 ## Pulihkan kata sandi yang terlupa
 

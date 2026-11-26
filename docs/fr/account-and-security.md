@@ -12,13 +12,13 @@ Votre **ID du capitaine** numérique est votre identifiant de connexion. Il rest
 
 ## Se connecter et confirmer un nouveau navigateur
 
-Choisissez **Connectez-vous** et saisissez votre **ID du capitaine** et votre **Mot de passe**. Un nouveau navigateur demande une confirmation si vous avez associé une machine ou si vous utilisez la validation en deux étapes. Si celle-ci est activée, confirmez chaque connexion, même sur un navigateur connu.
+Saisissez votre **ID du capitaine**, choisissez **Suivant**, puis saisissez votre **Mot de passe** et choisissez **Connectez-vous**. Si vous avez associé une machine, SailorBridge demande automatiquement une confirmation sur un nouveau navigateur. Lorsque la validation en deux étapes est désactivée, le mot de passe suffit sur un navigateur reconnu. Sans machine associée ni validation en deux étapes, il suffit aussi sur un nouveau navigateur. La **Validation en deux étapes** est facultative. Une fois activée, elle exige une confirmation à chaque connexion, même sur un navigateur reconnu.
 
 Dans **Confirmez que c’est vous**, utilisez l’une des méthodes proposées.
 
 - Pour **Code de l’authentificateur**, saisissez le code actuel de votre application d’authentification.
 - Pour **Code de la machine**, exécutez `sail confirm` dans un terminal sur une machine associée. Saisissez le code à huit caractères sur la page de connexion.
-- Si la page affiche un nombre à deux chiffres, ouvrez un autre navigateur sur lequel vous êtes déjà connecté. Vérifiez que le **Code de clé** correspond sur les deux écrans, puis touchez le nombre à deux chiffres de la page de connexion. Si quelqu’un d’autre a lancé la demande, choisissez **Ce n’était pas moi**.
+- Pour la **Confirmation par navigateur**, ouvrez un autre navigateur reconnu sur lequel vous êtes déjà connecté. Dans la demande de confirmation, touchez le nombre à deux chiffres affiché sur la page de connexion. Approuvez uniquement une connexion que vous avez lancée. Sinon, choisissez **Ce n’était pas moi**.
 
 ## Configurer votre profil et protéger vos connexions
 
@@ -28,13 +28,15 @@ Ouvrez **Sécurité**, puis **Validation en deux étapes**. Choisissez **Activer
 
 Pour changer de mot de passe, renseignez **Mot de passe actuel**, **Nouveau mot de passe** et **Confirmer le nouveau mot de passe** dans **Sécurité**. Saisissez un code d’authentification si la validation en deux étapes est activée. Après la modification, ce navigateur est connecté et les autres sessions sont déconnectées.
 
-## Vérifier l’activité et les clés des appareils
+<a name="vérifier-lactivité-et-les-clés-des-appareils"></a>
+
+## Vérifier l’activité et les appareils
 
 Ouvrez **Moi**, puis **Sécurité** et **Événements de sécurité récents**. La liste couvre les 90 derniers jours. Après une connexion réussie dans un nouveau navigateur, l’application vous demande si elle vient de vous. Choisissez **C’était moi** ou **Ce n’était pas moi**. Chaque navigateur conserve ses propres confirmations. Les échecs de connexion figurent dans la liste sans demande de confirmation.
 
-Si vous voyez une connexion que vous n’avez pas effectuée, changez votre mot de passe. **Déconnecter les autres sessions** déconnecte vos autres navigateurs. Pour déconnecter une seule machine, retirez-la sous **Machines**. **Révoquer toutes les machines** déconnecte toutes les machines associées. Vous devrez les associer à nouveau pour qu’elles puissent travailler ou fournir un code de récupération. Vous pouvez aussi supprimer un événement de sécurité après confirmation. Les autres navigateurs continuent de recevoir leurs propres alertes jusqu’à ce que vous y confirmiez l’événement.
+Si vous voyez une connexion que vous n’avez pas effectuée, changez votre mot de passe. **Déconnecter les autres sessions** déconnecte vos autres navigateurs et applications tout en gardant cette session ouverte. Pour déconnecter une seule machine, retirez-la sous **Machines**. **Révoquer toutes les machines** déconnecte toutes les machines associées. Vous devrez les associer à nouveau pour qu’elles puissent travailler ou fournir un code de récupération. Vous pouvez aussi supprimer un événement de sécurité après confirmation. Les autres navigateurs continuent de recevoir leurs propres alertes jusqu’à ce que vous y confirmiez l’événement.
 
-Dans **Sécurité**, ouvrez **Clés** pour voir les navigateurs et machines qui signent en votre nom. Pour ajouter un navigateur, ouvrez **En attente d’ajout** sur un navigateur déjà présent dans la liste. Comparez le code court à 12 caractères sur les deux navigateurs et choisissez **Ajouter** uniquement s’ils correspondent. Utilisez **Retirer** pour une clé que vous n’utilisez plus ou **Marquer comme volée** pour un appareil perdu. Supprimer la clé d’une machine retire cette machine. Si vous avez lancé une réinitialisation de la liste des clés sur une machine, vérifiez son nom avant de confirmer dans le navigateur.
+Dans **Sécurité**, ouvrez **Appareils** pour voir vos applications et vos machines associées. Sélectionnez un appareil, puis choisissez **Retirer** pour lui retirer la possibilité d’autoriser de nouvelles actions. L’application sera déconnectée ou la machine dissociée. Si l’appareil a disparu, choisissez **Perdu ou volé**. SailorBridge cessera aussi d’accepter les contenus déjà autorisés par cet appareil.
 
 ## Récupérer un mot de passe oublié
 

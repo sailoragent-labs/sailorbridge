@@ -12,13 +12,13 @@ Tu **ID de capitán** numérico es tu nombre de inicio de sesión. Sigue asociad
 
 ## Iniciar sesión y confirmar un navegador nuevo
 
-Elige **Iniciar sesión** e introduce tu **ID de capitán** y tu **Contraseña**. Un navegador nuevo pide confirmación si tienes una máquina vinculada o usas la verificación en dos pasos. Si la tienes activada, debes confirmar cada inicio de sesión, incluso en un navegador conocido.
+Introduce tu **ID de capitán**, elige **Siguiente**, introduce tu **Contraseña** y elige **Iniciar sesión**. Si tienes una máquina vinculada, SailorBridge pide confirmación automáticamente en un navegador nuevo. Con la verificación en dos pasos desactivada, basta con la contraseña en un navegador reconocido. Sin una máquina vinculada ni verificación en dos pasos, también basta con la contraseña en un navegador nuevo. La **Verificación en dos pasos** es opcional. Si la activas, debes confirmar cada inicio de sesión, incluso en un navegador conocido.
 
 En **Confirma que eres tú**, usa uno de los métodos que se ofrecen.
 
 - Para **Código del autenticador**, introduce el código actual de tu aplicación de autenticación.
 - Para **Código de la máquina**, ejecuta `sail confirm` en el terminal de una máquina vinculada. Introduce el código de ocho caracteres en la página de inicio de sesión.
-- Si la página muestra un número de dos dígitos, abre otro navegador en el que ya hayas iniciado sesión. Comprueba que el **Código de clave** coincida en ambas pantallas y toca el número de dos dígitos de la página de inicio de sesión. Si otra persona inició la solicitud, elige **No fui yo**.
+- Para la **Confirmación en el navegador**, abre otro navegador conocido donde ya tengas una sesión abierta. En el aviso de confirmación, toca el número de dos dígitos que aparece en la página de inicio de sesión. Aprueba solo un inicio de sesión que hayas iniciado tú. Si lo inició otra persona, elige **No fui yo**.
 
 ## Configurar tu perfil y proteger el acceso
 
@@ -28,13 +28,15 @@ Abre **Seguridad** y después **Verificación en dos pasos**. Elige **Activar**,
 
 Para cambiar la contraseña, rellena **Contraseña actual**, **Nueva contraseña** y **Confirmar nueva contraseña** en **Seguridad**. Introduce un código de autenticación si la verificación en dos pasos está activada. Tras el cambio, la sesión queda abierta en este navegador y se cierra en los demás.
 
-## Consultar la actividad y las claves de los dispositivos
+<a name="consultar-la-actividad-y-las-claves-de-los-dispositivos"></a>
+
+## Consultar la actividad y los dispositivos
 
 Abre **Yo**, después **Seguridad** y **Eventos de seguridad recientes**. La lista abarca los últimos 90 días. Si se inicia sesión correctamente desde un navegador nuevo, se te pregunta si fuiste tú. Elige **Fui yo** o **No fui yo**. Cada navegador registra sus propias confirmaciones. Los intentos fallidos aparecen en la lista sin pedirte aprobación.
 
-Si ves un inicio de sesión que no reconoces, cambia tu contraseña. **Cerrar otras sesiones** cierra las sesiones de los demás navegadores. Si solo quieres desconectar una máquina, retírala de **Máquinas**. **Revocar todas las máquinas** desconecta todas las máquinas vinculadas. Tendrás que volver a vincular cada una para que pueda trabajar o emitir un código de recuperación. También puedes eliminar un registro de seguridad individual tras confirmarlo. Los demás navegadores siguen recibiendo sus propios avisos hasta que confirmen el evento.
+Si ves un inicio de sesión que no reconoces, cambia tu contraseña. **Cerrar otras sesiones** cierra las sesiones de los demás navegadores y aplicaciones y mantiene abierta esta sesión. Si solo quieres desconectar una máquina, retírala de **Máquinas**. **Revocar todas las máquinas** desconecta todas las máquinas vinculadas. Tendrás que volver a vincular cada una para que pueda trabajar o emitir un código de recuperación. También puedes eliminar un registro de seguridad individual tras confirmarlo. Los demás navegadores siguen recibiendo sus propios avisos hasta que confirmen el evento.
 
-En **Seguridad**, abre **Claves** para ver los navegadores y las máquinas que firman en tu nombre. Para añadir un navegador, abre **Pendientes de unirse** en uno que ya figure en la lista. Compara el código corto de 12 caracteres en ambos navegadores y elige **Agregar** solo si coinciden. Usa **Quitar** para una clave que ya no utilices o **Marcar como robada** para un dispositivo perdido. Quitar la clave de una máquina retira esa máquina. Si iniciaste el restablecimiento de la lista de claves desde una máquina, comprueba su nombre antes de confirmarlo en el navegador.
+En **Seguridad**, abre **Dispositivos** para ver tus aplicaciones y máquinas vinculadas. Selecciona un dispositivo y elige **Quitar** para impedir que autorice nuevas acciones. Se cerrará la sesión de la aplicación o se desvinculará la máquina. Si el dispositivo ha desaparecido, elige **Perdido o robado**. SailorBridge también dejará de aceptar contenido que ese dispositivo hubiera autorizado.
 
 ## Recuperar una contraseña olvidada
 

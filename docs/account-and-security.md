@@ -12,13 +12,13 @@ Your numeric **Captain ID** is your sign-in name. It stays with your account whe
 
 ## Sign in and confirm a new browser
 
-Choose **Sign In** and enter your **Captain ID** and **Password**. A new browser asks for confirmation if you have a paired machine or use two-step verification. With two-step verification on, you must confirm every sign-in, even on a familiar browser.
+Enter your **Captain ID**, choose **Next**, then enter your **Password** and choose **Sign In**. If you have a paired machine, SailorBridge automatically asks for confirmation on a new browser. With two-step verification off, your password is enough in a recognized browser. Without a paired machine or two-step verification, a new browser can also sign in with just the password. Optional **Two-Step Verification** requires confirmation every time you sign in, even from a familiar browser.
 
 On **Confirm It’s You**, use one of the methods offered.
 
 - For **Authenticator Code**, enter the current code from your authenticator app.
 - For **Machine Code**, run `sail confirm` in a terminal on a paired machine. Enter the eight-character code on the sign-in page.
-- If the page shows a two-digit number, open another browser where you are already signed in. Check that the **Key Code** matches on both screens, then tap the two-digit number from the sign-in page. If someone else started the request, choose **Not Me**.
+- For **Browser Approval**, open a familiar browser where you’re already signed in. In the approval prompt, tap the two-digit number shown on the sign-in page. Approve only a sign-in you started. If someone else started it, choose **Not Me**.
 
 ## Set your profile and protect your sign-in
 
@@ -28,13 +28,15 @@ Open **Security**, then **Two-Step Verification**. Choose **Enable**, verify you
 
 To change your password, enter **Current Password**, **New Password** and **Confirm New Password** under **Security**. Enter an authenticator code if two-step verification is on. After the change, this browser is signed in and other sessions are signed out.
 
-## Check activity and device keys
+<a name="check-activity-and-device-keys"></a>
+
+## Check activity and devices
 
 Open **Me**, then **Security** and **Recent Security Events**. The list covers the last 90 days. A successful sign-in on a new browser asks whether it was yours. Choose **It Was Me** or **Not Me**. Each browser tracks its own acknowledgments. Unsuccessful sign-ins appear in the list without an approval prompt.
 
-If you see a sign-in you did not make, change your password. **Sign Out Other Sessions** signs out your other browsers. If you only need to disconnect one machine, retire it from **Machines**. **Revoke All Machines** disconnects every paired machine. You will need to pair each one again before it can work or provide a recovery code. You can also delete a single security record after confirmation. Other browsers still receive their own alerts until they acknowledge the event.
+If you see a sign-in you did not make, change your password. **Sign Out Other Sessions** signs out your other browsers and apps while keeping this session open. If you only need to disconnect one machine, retire it from **Machines**. **Revoke All Machines** disconnects every paired machine. You will need to pair each one again before it can work or provide a recovery code. You can also delete a single security record after confirmation. Other browsers still receive their own alerts until they acknowledge the event.
 
-In **Security**, open **Keys** to see the browsers and machines that sign work for you. To add a new browser, open **Waiting to Join** on a browser already on the list. Compare the 12-character short code on both browsers and choose **Add** only if they match. Use **Remove** for a key you no longer use or **Mark Stolen** for a lost device. Removing a machine key retires that machine. If you initiated a key-list reset on a machine, confirm it in the browser only after checking the machine name.
+In **Security**, open **Devices** to see your apps and paired machines. Select a device and choose **Remove** to stop it from authorizing new work. This signs that app out or disconnects that machine. For a missing device, choose **Lost or Stolen**. SailorBridge will also stop accepting content that device previously authorized.
 
 ## Recover a forgotten password
 
